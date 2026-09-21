@@ -2724,3 +2724,252 @@ a {
 .text-red {
   color: #b6171e;
 }
+
+/* ================= PAGE FORM PELAPORAN LHKAN ================= */
+.lhkan-header-box {
+  margin-bottom: 24px;
+}
+
+.lhkan-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lhkan-header-icon {
+  width: 28px;
+  height: 28px;
+  color: #001e40;
+}
+
+.lhkan-main-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #001e40;
+}
+
+.lhkan-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #43474f;
+  max-width: 672px;
+  margin-top: 8px;
+}
+
+.lhkan-info-banner {
+  background-color: #d5e3ff;
+  border: 1px solid #c3c6d1;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.lhkan-info-icon {
+  width: 20px;
+  height: 20px;
+  color: #003366;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.lhkan-info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lhkan-info-details .info-line {
+  font-size: 16px;
+  font-weight: 600;
+  color: #001e40;
+}
+
+.lhkan-form-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.lhkan-card {
+  background-color: #ffffff;
+  border: 1px solid #c3c6d1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.lhkan-card-header {
+  background-color: #f3f4f5;
+  padding: 16px;
+  border-bottom: 1px solid #c3c6d1;
+}
+
+.lhkan-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #001e40;
+}
+
+.lhkan-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pic-inputs-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pic-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.btn-add-pic {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 5px;
+  align-self: flex-start;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-row-two-cols {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #191c1d;
+}
+
+.text-required {
+  color: #ba1a1a;
+}
+
+.custom-input {
+  width: 100%;
+  height: 50px;
+  padding: 0 16px;
+  border: 1px solid #737780;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #191c1d;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: #0c6ad4;
+}
+
+.custom-input::placeholder {
+  color: #9ea3ae;
+}
+
+.input-readonly-gray {
+  background-color: #f3f4f5;
+}
+
+.calculated-box {
+  background-color: #e1e3e4;
+  border: 1px solid #c3c6d1;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.calculated-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #191c1d;
+}
+
+.calculated-value-display {
+  background-color: #f3f4f5;
+  border: 1px solid #c3c6d1;
+  border-radius: 4px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #43474f;
+}
+
+.calculated-formula-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #43474f;
+}
+
+.input-with-icon-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-left-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #737780;
+}
+
+.pl-10 {
+  padding-left: 44px !important;
+}
+
+.input-help-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #43474f;
+}
+
+.form-submit-row {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.btn-submit-lg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 52px;
+  padding: 0 32px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.btn-icon-md {
+  width: 18px;
+  height: 18px;
+  color: #ffffff;
+}
