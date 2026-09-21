@@ -1,0 +1,17 @@
+/* main.css */
+
+/* 1. Base & Reset */
+@import url("./base.css");
+
+/* 2. Layout Elements */
+@import url("./layout.css");
+
+/* 3. Reusable Components */
+@import url("./components.css");
+
+/* 4. Page Specific Styles */
+@import url("./pages/beranda.css");
+@import url("./pages/dokumen.css");
+@import url("./pages/evaluasi.css");
+@import url("./pages/pelaporan_lhkan.css");
+@import url("./pages/rekapdata.css");

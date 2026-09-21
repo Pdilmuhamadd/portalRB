@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Form Pelaporan LHKAN - Portal RB</title>
+  <title>Riwayat Pelaporan LHKAN - Portal RB</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
   <div class="portal-RB">
@@ -161,7 +161,7 @@
           <span class="breadcrumb-separator">&gt;</span>
           <span class="breadcrumb-link">Pelaporan LHKAN</span>
           <span class="breadcrumb-separator">&gt;</span>
-          <span class="breadcrumb-current">Form Input</span>
+          <span class="breadcrumb-current">Riwayat Pelaporan</span>
         </div>
       </div>
     </div>
@@ -170,143 +170,185 @@
     <main class="page-main-content">
       <div class="page-container-wide">
         
-        <div class="lhkan-header-box">
-          <div class="lhkan-title-row">
-            <svg class="lhkan-header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-              <polyline points="14 2 14 8 20 8"></polyline>
-              <line x1="16" y1="13" x2="8" y2="13"></line>
-              <line x1="16" y1="17" x2="8" y2="17"></line>
-            </svg>
-            <h1 class="lhkan-main-title">Form Pelaporan LHKAN</h1>
-          </div>
-          <p class="lhkan-subtitle">Lengkapi data pelaporan Lembar Kerja Hasil Penilaian Nasional dengan akurat dan tepat waktu.</p>
+        <div class="riwayat-header-box">
+          <h1 class="riwayat-main-title">Riwayat Pelaporan LHKAN</h1>
+          <p class="riwayat-subtitle">Pantau status dan riwayat pelaporan Lembar Kerja Hasil Penilaian Nasional.</p>
         </div>
 
-        <div class="lhkan-info-banner">
-          <svg class="lhkan-info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="12" y1="16" x2="12" y2="12"></line>
-            <line x1="12" y1="8" x2="12.01" y2="8"></line>
-          </svg>
-          <div class="lhkan-info-details">
-            <div class="info-line">Periode: pelaporan 2025 (2025)</div>
-            <div class="info-line">Instansi: Pemerintah Daerah Kabupaten Cirebon</div>
-          </div>
-        </div>
-
-        <form id="lhkanForm" class="lhkan-form-stack">
+        <!-- SECTION 1: SUMMARY STATISTICS CARDS -->
+        <div class="riwayat-stats-grid">
           
-          <!-- SECTION 1: DATA PIC (Person In Charge) -->
-          <div class="lhkan-card">
-            <div class="lhkan-card-header">
-              <h2 class="lhkan-card-title">Data PIC (Person In Charge)</h2>
-            </div>
-            <div class="lhkan-card-body">
-              <div class="pic-inputs-grid" id="picGrid">
-                <div class="pic-row">
-                  <div class="form-group flex-1">
-                    <label class="form-label">Nama PIC 1 <span class="text-required">*</span></label>
-                    <input type="text" class="custom-input" placeholder="Masukkan nama PIC" required />
-                  </div>
-                  <div class="form-group flex-1">
-                    <label class="form-label">Nomor HP PIC 1 <span class="text-required">*</span></label>
-                    <input type="tel" class="custom-input" placeholder="Masukkan nomor HP aktif" required />
-                  </div>
-                </div>
-              </div>
-
-              <button type="button" class="btn-primary-blue btn-add-pic" id="btnAddPic">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="btn-icon-xs">
-                  <line x1="12" y1="5" x2="12" y2="19"></line>
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
+          <div class="stat-card">
+            <div class="stat-card-top">
+              <div class="stat-card-header">
+                <svg class="stat-icon icon-navy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
                 </svg>
-                <span>Tambah PIC</span>
-              </button>
+                <span class="stat-title">Total Pelaporan</span>
+              </div>
+              <div class="stat-number">24</div>
+            </div>
+            <div class="stat-footer">
+              <span>Sepanjang tahun 2024</span>
             </div>
           </div>
 
-          <!-- SECTION 2: DATA APARATUR NEGARA -->
-          <div class="lhkan-card">
-            <div class="lhkan-card-header">
-              <h2 class="lhkan-card-title">Data Aparatur Negara</h2>
+          <div class="stat-card">
+            <div class="stat-card-top">
+              <div class="stat-card-header">
+                <svg class="stat-icon icon-cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span class="stat-title">Menunggu Verifikasi</span>
+              </div>
+              <div class="stat-number">3</div>
             </div>
-            <div class="lhkan-card-body">
-              
-              <div class="form-group width-full">
-                <label class="form-label">Jumlah Total Aparatur Negara <span class="text-required">*</span></label>
-                <input type="number" class="custom-input" value="0" min="0" required />
-              </div>
-
-              <div class="form-row-two-cols">
-                <div class="form-group flex-1">
-                  <label class="form-label">Jumlah Wajib LHKPN <span class="text-required">*</span></label>
-                  <input type="number" class="custom-input" value="0" min="0" required />
-                </div>
-                <div class="form-group flex-1">
-                  <label class="form-label">Jumlah Tidak Wajib LHKPN <span class="text-required">*</span></label>
-                  <input type="number" class="custom-input" value="0" min="0" required />
-                </div>
-              </div>
-
-              <div class="form-row-two-cols">
-                <div class="form-group flex-1">
-                  <label class="form-label">Realisasi LHKPN (Sudah Lapor) <span class="text-required">*</span></label>
-                  <input type="number" class="custom-input" value="0" min="0" required />
-                </div>
-                <div class="form-group flex-1">
-                  <label class="form-label">Realisasi SPT Tahunan - Non Wajib LHKPN (Sudah Lapor) <span class="text-required">*</span></label>
-                  <input type="number" class="custom-input" value="0" min="0" required />
-                </div>
-              </div>
-
-              <div class="form-group width-full">
-                <label class="form-label">Belum Lapor SPT - Non Wajib LHKPN <span class="text-required">*</span></label>
-                <input type="number" class="custom-input input-readonly-gray" value="0" readonly />
-              </div>
-
-              <div class="calculated-box">
-                <label class="calculated-label">Total Belum Lapor LHKAN (Calculated)</label>
-                <div class="calculated-value-display">0</div>
-                <span class="calculated-formula-text">
-                  Formula: (Jumlah Wajib LHKPN - Realisasi LHKPN) + Belum Lapor SPT Non Wajib LHKPN
-                </span>
-              </div>
-
+            <div class="stat-footer">
+              <span>Membutuhkan tindak lanjut</span>
             </div>
           </div>
 
-          <!-- SECTION 3: DOKUMEN REKAPITULASI -->
-          <div class="lhkan-card">
-            <div class="lhkan-card-header">
-              <h2 class="lhkan-card-title">Dokumen Rekapitulasi</h2>
+          <div class="stat-card">
+            <div class="stat-card-top">
+              <div class="stat-card-header">
+                <svg class="stat-icon icon-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span class="stat-title">Telah Disetujui</span>
+              </div>
+              <div class="stat-number">18</div>
             </div>
-            <div class="lhkan-card-body">
-              <div class="form-group width-full">
-                <label class="form-label">Link Google Drive Rekapitulasi <span class="text-required">*</span></label>
-                <div class="input-with-icon-wrapper">
-                  <svg class="input-left-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-                  </svg>
-                  <input type="url" class="custom-input pl-10" placeholder="https://drive.google.com/..." required />
-                </div>
-                <span class="input-help-text">Paste link Google Drive yang berisi file rekapitulasi LHKAN</span>
+            <div class="stat-footer">
+              <span>Dokumen valid</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SECTION 2: FILTER & SEARCH BAR -->
+        <div class="riwayat-filter-card">
+          <div class="search-input-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="riwayat-search-input" placeholder="Cari instansi atau dokumen..." />
+          </div>
+
+          <div class="filter-dropdowns-group">
+            <div class="select-container select-filter-year">
+              <select class="custom-select select-bg-light">
+                <option value="all" selected>Semua Tahun</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+              </select>
+              <div class="select-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+            </div>
+
+            <div class="select-container select-filter-status">
+              <select class="custom-select select-bg-light">
+                <option value="all" selected>Semua Status</option>
+                <option value="approved">Disetujui</option>
+                <option value="process">Proses</option>
+                <option value="revision">Revisi</option>
+              </select>
+              <div class="select-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="form-submit-row">
-            <button type="submit" class="btn-primary-blue btn-submit-lg">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon-md">
-                <line x1="22" y1="2" x2="11" y2="13"></line>
-                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-              </svg>
-              <span>SUBMIT DATA</span>
-            </button>
+        <!-- SECTION 3: DATATABLE RIWAYAT PELAPORAN -->
+        <div class="riwayat-table-card">
+          <div class="riwayat-table-wrapper">
+            <table class="riwayat-data-table">
+              <thead>
+                <tr>
+                  <th class="w-rwy-tahun">Tahun</th>
+                  <th class="w-rwy-periode">Periode</th>
+                  <th class="w-rwy-instansi">Instansi</th>
+                  <th class="w-rwy-tgl">Tanggal Kirim</th>
+                  <th class="w-rwy-status">Status</th>
+                  <th class="col-right w-rwy-aksi">Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2024</td>
+                  <td>Q1</td>
+                  <td class="font-medium text-dark">Kementerian Dalam Negeri</td>
+                  <td class="text-muted">12 Mar 2024</td>
+                  <td>
+                    <span class="status-badge badge-disetujui">Disetujui</span>
+                  </td>
+                  <td class="col-right">
+                    <button class="btn-detail-outline">
+                      <svg class="btn-detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                      <span>Lihat Detail</span>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2024</td>
+                  <td>Q1</td>
+                  <td class="font-medium text-dark">Kementerian Keuangan</td>
+                  <td class="text-muted">15 Mar 2024</td>
+                  <td>
+                    <span class="status-badge badge-proses">Proses</span>
+                  </td>
+                  <td class="col-right">
+                    <button class="btn-detail-outline">
+                      <svg class="btn-detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                      <span>Lihat Detail</span>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2024</td>
+                  <td>Q1</td>
+                  <td class="font-medium text-dark">Kementerian Kesehatan</td>
+                  <td class="text-muted">10 Mar 2024</td>
+                  <td>
+                    <span class="status-badge badge-revisi">Revisi</span>
+                  </td>
+                  <td class="col-right">
+                    <button class="btn-detail-outline">
+                      <svg class="btn-detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                      <span>Lihat Detail</span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
-        </form>
+          <div class="rekap-table-footer p-padding-horizontal-32">
+            <span class="entries-info">Showing 1 to 2 of 2 entries</span>
+            <div class="pagination-nav">
+              <button class="btn-page disabled" aria-label="Previous">&lt;</button>
+              <button class="btn-page disabled" aria-label="Next">&gt;</button>
+            </div>
+          </div>
+        </div>
 
       </div>
     </main>
@@ -334,29 +376,6 @@
           dropdowns.forEach(d => d.classList.remove('active'));
         }
       });
-
-      const btnAddPic = document.getElementById('btnAddPic');
-      const picGrid = document.getElementById('picGrid');
-      let picCount = 1;
-
-      if (btnAddPic && picGrid) {
-        btnAddPic.addEventListener('click', () => {
-          picCount++;
-          const picRow = document.createElement('div');
-          picRow.className = 'pic-row';
-          picRow.innerHTML = `
-            <div class="form-group flex-1">
-              <label class="form-label">Nama PIC ${picCount} <span class="text-required">*</span></label>
-              <input type="text" class="custom-input" placeholder="Masukkan nama PIC" required />
-            </div>
-            <div class="form-group flex-1">
-              <label class="form-label">Nomor HP PIC ${picCount} <span class="text-required">*</span></label>
-              <input type="tel" class="custom-input" placeholder="Masukkan nomor HP aktif" required />
-            </div>
-          `;
-          picGrid.appendChild(picRow);
-        });
-      }
     });
   </script>
 </body>

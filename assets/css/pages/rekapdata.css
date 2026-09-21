@@ -1,0 +1,205 @@
+/* pages/rekapdata.css */
+/* Style khusus Perencanaan, Monev, dan Rekap Data */
+
+/* Filter Card Box */
+.filter-card-container {
+  width: 1137px;
+  background-color: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.filter-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  width: 100%;
+}
+
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.filter-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-gray);
+}
+
+.table-toolbar {
+  width: 1137px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.export-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.icon-pdf-red { color: var(--red-accent); }
+.icon-excel-green { color: #107c41; }
+
+.datatable-controls {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.entries-control, .search-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: var(--text-gray);
+}
+
+.search-input {
+  width: 192px;
+  height: 34px;
+  background-color: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 2px;
+  padding: 0 8px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+}
+
+.datatable-wrapper {
+  width: 1229px;
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  overflow: visible; 
+  margin-bottom: 24px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table thead tr {
+  background-color: var(--primary-navy);
+  color: #ffffff;
+}
+
+.data-table th {
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  border-right: 1px solid var(--card-border);
+}
+
+.data-table th:last-child {
+  border-right: none;
+}
+
+.data-table td {
+  padding: 16px;
+  font-size: 16px;
+  color: #191c1d;
+  border-top: 1px solid var(--card-border);
+  border-right: 1px solid var(--card-border);
+  vertical-align: top;
+}
+
+.data-table td:last-child {
+  border-right: none;
+}
+
+.btn-action-dropdown {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-light);
+  border: 1px solid var(--card-border);
+  border-radius: 2px;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-gray);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-action-dropdown:hover {
+  background-color: #e2e8f0;
+}
+
+.action-popup-menu.renaksi-popup {
+  width: 177px; 
+}
+
+.renaksi-badge {
+  background-color: var(--primary-navy);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 2px 6px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Rekap Scroll Tables */
+.rekap-table-scroll-wrapper,
+.rbt-rekap-scroll-wrapper {
+  width: 100%;
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  background-color: #ffffff;
+  overflow-x: auto; 
+  margin-bottom: 32px;
+}
+
+.rekap-data-table {
+  width: 2400px; 
+  border-collapse: collapse;
+}
+
+.rbt-rekap-table {
+  width: 1615px; 
+  border-collapse: collapse;
+}
+
+.rekap-data-table thead tr {
+  background-color: var(--primary-navy);
+  color: #ffffff;
+}
+
+.rbt-rekap-table thead tr {
+  background-color: var(--secondary-navy);
+  color: #ffffff;
+}
+
+.rekap-data-table th, .rbt-rekap-table th {
+  padding: 12px 8px;
+  font-size: 12px;
+  font-weight: 700;
+  border-right: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.rekap-data-table td, .rbt-rekap-table td {
+  padding: 12px 10px;
+  font-size: 14px;
+  color: var(--text-dark);
+  border-right: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+  vertical-align: top;
+}

@@ -1,0 +1,452 @@
+/* pages/dokumen.css */
+/* Style khusus Halaman Dokumen */
+
+.document-page-main {
+  padding: 36px 0 80px 0;
+  background-color: #ffffff;
+}
+
+/* Header Halaman */
+.doc-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.doc-page-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  color: var(--primary-navy);
+  margin-bottom: 4px;
+}
+
+.doc-page-subtitle {
+  font-size: 18px;
+  color: var(--text-gray);
+}
+
+.btn-upload {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--accent-blue);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-upload:hover {
+  background-color: #0952a8;
+}
+
+.btn-upload:active {
+  transform: scale(0.98);
+}
+
+.icon-upload {
+  width: 18px;
+  height: 18px;
+}
+
+/* Folder Terkini */
+.folder-section {
+  margin-bottom: 48px;
+}
+
+.section-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.folder-section-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary-navy);
+}
+
+.link-see-all {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-navy);
+  transition: color 0.2s ease;
+}
+
+.link-see-all:hover {
+  color: var(--accent-blue);
+}
+
+.folder-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.folder-card {
+  background-color: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.folder-card:hover {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.folder-icon-box {
+  width: 48px;
+  height: 48px;
+  background-color: #edeeef;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-navy);
+}
+
+.folder-icon-box svg {
+  width: 24px;
+  height: 24px;
+}
+
+.folder-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.folder-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #191c1d;
+  line-height: 1.35;
+}
+
+.folder-count {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-gray);
+}
+
+/* Tabel Dokumen Terkini */
+.recent-doc-section {
+  width: 100%;
+}
+
+.btn-filter {
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-filter:hover {
+  background-color: var(--bg-light);
+}
+
+.btn-filter svg {
+  width: 18px;
+  height: 18px;
+  color: var(--text-gray);
+}
+
+.doc-table-container {
+  width: 100%;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  overflow: visible; 
+}
+
+.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.doc-table thead tr {
+  background-color: var(--primary-navy);
+  color: #ffffff;
+}
+
+.doc-table th {
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.doc-table td {
+  padding: 20px 16px;
+  font-size: 16px;
+  border-top: 1px solid #e2e8f0;
+  vertical-align: middle;
+}
+
+.col-no {
+  width: 60px;
+  text-align: center !important;
+  color: var(--text-gray);
+}
+
+.col-tahun {
+  width: 100px;
+  color: var(--text-gray);
+}
+
+.col-kategori {
+  width: 380px;
+  font-weight: 500;
+  color: #191c1d;
+}
+
+.col-file {
+  width: 280px;
+}
+
+.pdf-file-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--red-accent);
+  font-weight: 400;
+  font-size: 16px;
+  transition: opacity 0.2s ease;
+}
+
+.pdf-file-link:hover {
+  opacity: 0.8;
+}
+
+.icon-pdf {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.col-aksi {
+  width: 80px;
+  text-align: right !important;
+  position: relative;
+}
+
+.btn-action-more {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: var(--text-gray);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-action-more:hover {
+  background-color: #edeeef;
+}
+
+/* Modal Popup Tambah Dokumen */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease-in-out;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container {
+  width: 896px; 
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transform: translateY(-20px);
+  transition: transform 0.25s ease-in-out;
+}
+
+.modal-overlay.active .modal-container {
+  transform: translateY(0);
+}
+
+.modal-header {
+  background-color: var(--primary-navy);
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.btn-close-modal {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-close-modal:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-close-modal svg {
+  width: 18px;
+  height: 18px;
+}
+
+.modal-body {
+  padding: 32px 24px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.form-group-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.form-group-row .form-label {
+  width: 208px; 
+  padding-top: 12px;
+}
+
+.form-input-wrapper {
+  width: 624px; 
+}
+
+.dropzone-area {
+  width: 100%;
+  background-color: var(--bg-light);
+  border: 2px dashed var(--card-border);
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.dropzone-area:hover {
+  border-color: var(--accent-blue);
+  background-color: #f0f7ff;
+}
+
+.dropzone-icon {
+  margin-bottom: 8px;
+  color: var(--text-gray);
+}
+
+.dropzone-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.dropzone-text-main {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.dropzone-text-sub {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.modal-footer {
+  background-color: #ffffff;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  border-top: 1px solid #e1e3e4;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.btn-cancel {
+  background-color: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #191c1d;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-cancel:hover {
+  background-color: #f4f4f6;
+}
+
+.btn-submit {
+  background-color: #0847c6;
+  border: none;
+  border-radius: 4px;
+  padding: 9px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #06379c;
+}
