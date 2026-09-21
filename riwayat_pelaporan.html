@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rekap Data - RB Tematik</title>
+  <title>Riwayat Pelaporan LHKAN - Portal RB</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +23,9 @@
           <a href="index.html" class="nav-link">Beranda</a>
           <a href="dokumen.html" class="nav-link">Dokumen</a>
 
-          <div class="dropdown-container active">
+          <div class="dropdown-container">
             <div class="dropdown-trigger">
-              <span class="nav-link active">Rencana Aksi</span>
+              <span class="nav-link">Rencana Aksi</span>
               <span class="chevron-icon">▼</span>
             </div>
             
@@ -113,9 +113,9 @@
             </div>
           </div>
 
-          <div class="dropdown-container">
+          <div class="dropdown-container active">
             <div class="dropdown-trigger">
-              <span class="nav-link">Pelaporan LHKAN</span>
+              <span class="nav-link active">Pelaporan LHKAN</span>
               <span class="chevron-icon">▼</span>
             </div>
 
@@ -151,7 +151,7 @@
     </header>
 
     <div class="breadcrumb-bar">
-      <div class="page-container-rekap">
+      <div class="page-container-wide">
         <div class="breadcrumb-content">
           <svg class="icon-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -159,188 +159,192 @@
           </svg>
           <a href="index.html" class="breadcrumb-link">Beranda</a>
           <span class="breadcrumb-separator">&gt;</span>
-          <span class="breadcrumb-link">Rencana Aksi</span>
+          <span class="breadcrumb-link">Pelaporan LHKAN</span>
           <span class="breadcrumb-separator">&gt;</span>
-          <span class="breadcrumb-link">RB Tematik</span>
-          <span class="breadcrumb-separator">&gt;</span>
-          <span class="breadcrumb-current">Rekap Data</span>
+          <span class="breadcrumb-current">Riwayat Pelaporan</span>
         </div>
       </div>
     </div>
 
     <!-- MAIN CONTENT AREA -->
     <main class="page-main-content">
-      <div class="page-container-rekap">
+      <div class="page-container-wide">
         
-        <!-- SECTION 1: FILTER CARD (Tahun, Tema, Fokus Intervensi) -->
-        <div class="filter-card-container width-full">
-          <div class="filter-row-three-cols">
-            
-            <div class="filter-field">
-              <label class="filter-label-xs">Tahun</label>
-              <div class="select-container">
-                <select class="custom-select select-bg-light">
-                  <option value="2026" selected>2026</option>
-                  <option value="2025">2025</option>
-                  <option value="2024">2024</option>
-                </select>
-                <div class="select-arrow">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                </div>
+        <div class="riwayat-header-box">
+          <h1 class="riwayat-main-title">Riwayat Pelaporan LHKAN</h1>
+          <p class="riwayat-subtitle">Pantau status dan riwayat pelaporan Lembar Kerja Hasil Penilaian Nasional.</p>
+        </div>
+
+        <!-- SECTION 1: SUMMARY STATISTICS CARDS -->
+        <div class="riwayat-stats-grid">
+          
+          <div class="stat-card">
+            <div class="stat-card-top">
+              <div class="stat-card-header">
+                <svg class="stat-icon icon-navy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+                <span class="stat-title">Total Pelaporan</span>
+              </div>
+              <div class="stat-number">24</div>
+            </div>
+            <div class="stat-footer">
+              <span>Sepanjang tahun 2024</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-card-top">
+              <div class="stat-card-header">
+                <svg class="stat-icon icon-cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span class="stat-title">Menunggu Verifikasi</span>
+              </div>
+              <div class="stat-number">3</div>
+            </div>
+            <div class="stat-footer">
+              <span>Membutuhkan tindak lanjut</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-card-top">
+              <div class="stat-card-header">
+                <svg class="stat-icon icon-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span class="stat-title">Telah Disetujui</span>
+              </div>
+              <div class="stat-number">18</div>
+            </div>
+            <div class="stat-footer">
+              <span>Dokumen valid</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SECTION 2: FILTER & SEARCH BAR -->
+        <div class="riwayat-filter-card">
+          <div class="search-input-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="riwayat-search-input" placeholder="Cari instansi atau dokumen..." />
+          </div>
+
+          <div class="filter-dropdowns-group">
+            <div class="select-container select-filter-year">
+              <select class="custom-select select-bg-light">
+                <option value="all" selected>Semua Tahun</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+              </select>
+              <div class="select-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </div>
             </div>
 
-            <div class="filter-field">
-              <label class="filter-label-xs">Tema</label>
-              <div class="select-container">
-                <select class="custom-select select-bg-light">
-                  <option value="all" selected>Semua Tema</option>
-                  <option value="1">Pengentasan Kemiskinan Ekstrem</option>
-                  <option value="2">Peningkatan Investasi</option>
-                </select>
-                <div class="select-arrow">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                </div>
+            <div class="select-container select-filter-status">
+              <select class="custom-select select-bg-light">
+                <option value="all" selected>Semua Status</option>
+                <option value="approved">Disetujui</option>
+                <option value="process">Proses</option>
+                <option value="revision">Revisi</option>
+              </select>
+              <div class="select-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </div>
             </div>
-
-            <div class="filter-field">
-              <label class="filter-label-xs">Fokus Intervensi</label>
-              <div class="select-container">
-                <select class="custom-select select-bg-light">
-                  <option value="all" selected>Semua Fokus</option>
-                </select>
-                <div class="select-arrow">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                </div>
-              </div>
-            </div>
-
-            <button class="btn-primary-blue btn-rekap-filter">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-search-btn">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-              <span>Lihat Data</span>
-            </button>
-
           </div>
         </div>
 
-        <!-- SECTION 2: DATATABLE REKAP DATA RB TEMATIK -->
-        <div class="rbt-rekap-table-card">
-          <div class="rbt-rekap-toolbar">
-            <div class="export-buttons">
-              <button class="btn-export-excel-subtle">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="icon-excel-subtle">
-                  <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm1.8 18H14l-2-3.4-2 3.4H8.2l2.9-4.5L8.3 9h1.9l1.8 3.2L13.8 9h1.9l-2.8 4.4 2.9 4.6z"/>
-                </svg>
-                <span>Excel</span>
-              </button>
-            </div>
-
-            <div class="datatable-controls">
-              <div class="entries-control">
-                <span>Show</span>
-                <div class="select-container select-sm">
-                  <select class="custom-select select-compact">
-                    <option value="10" selected>10</option>
-                    <option value="25">25</option>
-                    <option value="50">50</option>
-                  </select>
-                  <div class="select-arrow">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                  </div>
-                </div>
-                <span>entries</span>
-              </div>
-
-              <div class="search-control">
-                <label for="tableSearch">Search:</label>
-                <input type="text" id="tableSearch" class="search-input" />
-              </div>
-            </div>
-          </div>
-
-          <div class="rbt-rekap-scroll-wrapper">
-            <table class="rbt-rekap-table">
+        <!-- SECTION 3: DATATABLE RIWAYAT PELAPORAN -->
+        <div class="riwayat-table-card">
+          <div class="riwayat-table-wrapper">
+            <table class="riwayat-data-table">
               <thead>
                 <tr>
-                  <th class="col-center w-rbt-rk-no">No.</th>
-                  <th class="w-rbt-rk-tema">Tema</th>
-                  <th class="w-rbt-rk-sasaran">Sasaran</th>
-                  <th class="w-rbt-rk-indikator">Indikator</th>
-                  <th class="col-right w-rbt-rk-target">Target</th>
-                  <th class="w-rbt-rk-satuan">Satuan Target</th>
-                  <th class="col-right w-rbt-rk-realisasi">Realisasi</th>
-                  <th class="col-center w-rbt-rk-capaian">Capaian</th>
-                  <th class="w-rbt-rk-catatan">Catatan</th>
-                  <th class="w-rbt-rk-evaluator">Catatan Evaluator</th>
-                  <th class="w-rbt-rk-permasalahan">Permasalahan</th>
-                  <th class="w-rbt-rk-sas-p">Sasaran</th>
-                  <th class="w-rbt-rk-ind-p">Indikator</th>
-                  <th class="w-rbt-rk-tar-p">Target</th>
-                  <th class="w-rbt-rk-sat-p">Satuan</th>
-                  <th class="col-right w-rbt-rk-rea-p">Realisasi</th>
-                  <th class="w-rbt-rk-cap-p">Capaian</th>
-                  <th class="w-rbt-rk-cat-p">Catatan</th>
+                  <th class="w-rwy-tahun">Tahun</th>
+                  <th class="w-rwy-periode">Periode</th>
+                  <th class="w-rwy-instansi">Instansi</th>
+                  <th class="w-rwy-tgl">Tanggal Kirim</th>
+                  <th class="w-rwy-status">Status</th>
+                  <th class="col-right w-rwy-aksi">Aksi</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="col-center text-muted">1</td>
-                  <td>Pengentasan Kemiskinan Ekstrem</td>
-                  <td>Menurunnya tingkat kemiskinan</td>
-                  <td>Persentase penduduk miskin</td>
-                  <td class="col-right">8.5</td>
-                  <td>%</td>
-                  <td class="col-right">8.1</td>
-                  <td class="col-center">
-                    <span class="badge-capaian-blue">104.9%</span>
+                  <td>2024</td>
+                  <td>Q1</td>
+                  <td class="font-medium text-dark">Kementerian Dalam Negeri</td>
+                  <td class="text-muted">12 Mar 2024</td>
+                  <td>
+                    <span class="status-badge badge-disetujui">Disetujui</span>
                   </td>
-                  <td class="text-muted">Target terlampaui</td>
-                  <td class="text-muted">-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td class="col-right">-</td>
-                  <td>-</td>
-                  <td class="col-right">-</td>
-                  <td class="col-center">-</td>
-                  <td class="text-muted">-</td>
+                  <td class="col-right">
+                    <button class="btn-detail-outline">
+                      <svg class="btn-detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                      <span>Lihat Detail</span>
+                    </button>
+                  </td>
                 </tr>
 
                 <tr>
-                  <td class="col-center text-muted">2</td>
-                  <td>Peningkatan Investasi</td>
-                  <td>Meningkatnya nilai investasi daerah</td>
-                  <td>Jumlah investasi masuk</td>
-                  <td class="col-right">500</td>
-                  <td>%</td>
-                  <td class="col-right">450</td>
-                  <td class="col-center">
-                    <span class="badge-capaian-red">90%</span>
+                  <td>2024</td>
+                  <td>Q1</td>
+                  <td class="font-medium text-dark">Kementerian Keuangan</td>
+                  <td class="text-muted">15 Mar 2024</td>
+                  <td>
+                    <span class="status-badge badge-proses">Proses</span>
                   </td>
-                  <td class="text-muted">Belum mencapai target</td>
-                  <td class="text-muted">Perlu percepatan perizinan</td>
-                  <td>Proses perizinan lambat</td>
-                  <td>Mempercepat SLA perizinan</td>
-                  <td>Rata-rata waktu izin</td>
-                  <td class="col-right">5</td>
-                  <td>Hari</td>
-                  <td class="col-right">7</td>
-                  <td class="col-center">71%</td>
-                  <td class="text-muted">Sistem OSS sering gangguan</td>
+                  <td class="col-right">
+                    <button class="btn-detail-outline">
+                      <svg class="btn-detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                      <span>Lihat Detail</span>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>2024</td>
+                  <td>Q1</td>
+                  <td class="font-medium text-dark">Kementerian Kesehatan</td>
+                  <td class="text-muted">10 Mar 2024</td>
+                  <td>
+                    <span class="status-badge badge-revisi">Revisi</span>
+                  </td>
+                  <td class="col-right">
+                    <button class="btn-detail-outline">
+                      <svg class="btn-detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                      <span>Lihat Detail</span>
+                    </button>
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div class="rekap-table-footer">
+          <div class="rekap-table-footer p-padding-horizontal-32">
             <span class="entries-info">Showing 1 to 2 of 2 entries</span>
             <div class="pagination-nav">
               <button class="btn-page disabled" aria-label="Previous">&lt;</button>
-              <button class="btn-page active">1</button>
               <button class="btn-page disabled" aria-label="Next">&gt;</button>
             </div>
           </div>
