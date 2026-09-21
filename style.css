@@ -2227,3 +2227,144 @@ a {
   color: #191c1d !important;
   border-color: #c3c6d1 !important;
 }
+
+/* ================= PAGE REKAP DATA RB TEMATIK ================= */
+.filter-row-three-cols {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+  width: 100%;
+}
+
+.filter-label-xs {
+  font-size: 12px;
+  font-weight: 500;
+  color: #43474f;
+}
+
+.rbt-rekap-table-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #c3c6d1;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.rbt-rekap-toolbar {
+  background-color: #f8f9fa;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c3c6d1;
+}
+
+.btn-export-excel-subtle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f8f9fa;
+  border: 1px solid #c3c6d1;
+  border-radius: 2px;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #43474f;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-export-excel-subtle:hover {
+  background-color: #e2e8f0;
+}
+
+.icon-excel-subtle {
+  width: 15px;
+  height: 15px;
+  color: #43474f;
+}
+
+.rbt-rekap-scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.rbt-rekap-table {
+  width: 1615px; 
+  border-collapse: collapse;
+}
+
+.rbt-rekap-table thead tr {
+  background-color: #003366;
+  color: #ffffff;
+}
+
+.rbt-rekap-table th {
+  padding: 19px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+  border-right: 1px solid #c3c6d1;
+  vertical-align: middle;
+}
+
+.rbt-rekap-table th:last-child {
+  border-right: none;
+}
+
+.rbt-rekap-table td {
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #191c1d;
+  border-top: 1px solid #c3c6d1;
+  border-right: 1px solid #c3c6d1;
+  vertical-align: top;
+}
+
+.rbt-rekap-table td:last-child {
+  border-right: none;
+}
+
+.w-rbt-rk-no { width: 72px; }
+.w-rbt-rk-tema { width: 124px; }
+.w-rbt-rk-sasaran { width: 131px; }
+.w-rbt-rk-indikator { width: 110px; }
+.w-rbt-rk-target { width: 77px; }
+.w-rbt-rk-satuan { width: 73px; }
+.w-rbt-rk-realisasi { width: 71px; }
+.w-rbt-rk-capaian { width: 84px; }
+.w-rbt-rk-catatan { width: 108px; }
+.w-rbt-rk-evaluator { width: 100px; }
+.w-rbt-rk-permasalahan { width: 95px; }
+.w-rbt-rk-sas-p { width: 130px; }
+.w-rbt-rk-ind-p { width: 71px; }
+.w-rbt-rk-tar-p { width: 77px; }
+.w-rbt-rk-sat-p { width: 73px; }
+.w-rbt-rk-rea-p { width: 71px; }
+.w-rbt-rk-cap-p { width: 56px; }
+.w-rbt-rk-cat-p { width: 91px; }
+
+.col-right {
+  text-align: right !important;
+}
+
+.badge-capaian-blue {
+  background-color: #d5e3ff;
+  color: #001b3c;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.badge-capaian-red {
+  background-color: #ffdad6;
+  color: #93000a;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 2px;
+  display: inline-block;
+}
