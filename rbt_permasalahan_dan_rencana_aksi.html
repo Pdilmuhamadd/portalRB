@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tema dan Sasaran Tematik - RB Tematik</title>
+  <title>Permasalahan dan Rencana Aksi - RB Tematik</title>
   
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
+  <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+  <link href="[https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap](https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap)" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="portal-RB">
     
-    <!-- NAVBAR -->
+    <!-- HEADER / NAVBAR -->
     <header class="header">
       <div class="nav-container">
         <img class="logo-main" src="img/logo-portal-rb.png" alt="Logo Portal RB" />
@@ -23,7 +23,6 @@
           <a href="index.html" class="nav-link">Beranda</a>
           <a href="dokumen.html" class="nav-link">Dokumen</a>
 
-          <!-- Rencana Aksi -->
           <div class="dropdown-container active">
             <div class="dropdown-trigger">
               <span class="nav-link active">Rencana Aksi</span>
@@ -44,7 +43,7 @@
                           <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
                         </div>
                       </a>
-                      <a href="rbg_rekap_data.html" class="menu-card">
+                      <a href="rbg_rekapdata.html" class="menu-card">
                         <div class="icon-box"><img class="card-icon" src="img/icon-rekap.png" alt="Icon" /></div>
                         <div class="card-text">
                           <span class="card-title">Rekap Data</span>
@@ -85,7 +84,6 @@
             </div>
           </div>
 
-          <!-- Evaluasi -->
           <div class="dropdown-container">
             <div class="dropdown-trigger">
               <span class="nav-link">Evaluasi</span>
@@ -115,7 +113,6 @@
             </div>
           </div>
 
-          <!-- Pelaporan LHKAN -->
           <div class="dropdown-container">
             <div class="dropdown-trigger">
               <span class="nav-link">Pelaporan LHKAN</span>
@@ -153,7 +150,6 @@
       </div>
     </header>
 
-    <!-- BREADCRUMB BAR -->
     <div class="breadcrumb-bar">
       <div class="page-container-wide">
         <div class="breadcrumb-content">
@@ -167,77 +163,128 @@
           <span class="breadcrumb-separator">&gt;</span>
           <span class="breadcrumb-link">RB Tematik</span>
           <span class="breadcrumb-separator">&gt;</span>
-          <span class="breadcrumb-current">Tema dan Sasaran Tematik</span>
+          <span class="breadcrumb-current">Permasalahan dan Rencana Aksi</span>
         </div>
       </div>
     </div>
 
-    <!-- MAIN -->
     <main class="page-main-content">
       <div class="page-container-wide">
         
-        <!-- PERENCANAAN AKSI RB TEMATIK CARD -->
-        <div class="rbt-header-card">
-          <h2 class="rbt-header-title">Perencanaan Aksi RB Tematik</h2>
-          <div class="rbt-header-divider"></div>
-          
-          <div class="rbt-year-filter-wrapper">
-            <label class="rbt-year-label">Tahun</label>
-            <div class="select-container select-rbt-year">
-              <select class="custom-select select-bg-light">
-                <option value="2025" selected>2025</option>
-                <option value="2024">2024</option>
-                <option value="2023">2023</option>
-              </select>
-              <div class="select-arrow">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        <!-- SECTION 1: FORM FILTER RENCANA AKSI RB TEMATIK -->
+        <div class="rbt-form-card">
+          <div class="rbt-card-header">
+            <h2 class="rbt-card-title-navy">Rencana Aksi RB Tematik</h2>
+          </div>
+          <div class="rbt-card-body">
+            
+            <div class="form-row-item">
+              <label class="form-row-label">Tahun</label>
+              <div class="form-row-input">
+                <div class="select-container">
+                  <select class="custom-select select-bg-light">
+                    <option value="2025" selected>2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                  </select>
+                  <div class="select-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <div class="form-row-item">
+              <label class="form-row-label">Tema</label>
+              <div class="form-row-input">
+                <div class="select-container">
+                  <select class="custom-select select-bg-light">
+                    <option value="" disabled selected hidden>-- Pilih tema --</option>
+                    <option value="1">Pengentasan Kemiskinan</option>
+                    <option value="2">Peningkatan Investasi</option>
+                  </select>
+                  <div class="select-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row-item">
+              <label class="form-row-label">Sasaran Roadmap</label>
+              <div class="form-row-input">
+                <div class="select-container">
+                  <select class="custom-select select-bg-light">
+                    <option value="" disabled selected hidden>-- Pilih sasaran roadmap --</option>
+                    <option value="1">Menurunnya Angka Kemiskinan</option>
+                  </select>
+                  <div class="select-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row-item">
+              <label class="form-row-label">Indikator Roadmap</label>
+              <div class="form-row-input">
+                <div class="select-container">
+                  <select class="custom-select select-bg-light">
+                    <option value="" disabled selected hidden>-- Pilih indikator roadmap --</option>
+                    <option value="1">Persentase Penduduk Miskin</option>
+                  </select>
+                  <div class="select-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row-item">
+              <label class="form-row-label">Target</label>
+              <div class="form-row-input font-value-muted">-</div>
+            </div>
+
+            <div class="form-row-item border-none">
+              <label class="form-row-label">Satuan Target</label>
+              <div class="form-row-input font-value-muted">-</div>
+            </div>
+
           </div>
         </div>
 
-        <!-- DATA RENCANA AKSI BOX -->
+        <!-- SECTION 2: DATA PERMASALAHAN CARD & DATATABLE -->
         <div class="rbt-data-card">
           <div class="rbt-action-header">
-            <div class="rbt-action-title">
+            <div class="rbt-action-title text-navy-dark">
               <svg class="rbt-title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
                 <line x1="16" y1="13" x2="8" y2="13"></line>
                 <line x1="16" y1="17" x2="8" y2="17"></line>
               </svg>
-              <span>Data Rencana Aksi</span>
+              <span>Data Permasalahan</span>
             </div>
 
-            <div class="rbt-action-buttons">
-              <button class="btn-rbt-action">
-                <svg class="btn-rbt-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <span>Template</span>
-              </button>
-              <button class="btn-rbt-action">
-                <svg class="btn-rbt-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
-                <span>Import</span>
-              </button>
-              <button class="btn-rbt-action">
-                <svg class="btn-rbt-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-                <span>Tambah Sasaran Tematik Roadmap</span>
-              </button>
-            </div>
+            <button class="btn-rbt-action">
+              <svg class="btn-rbt-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>Tambah Permasalahan</span>
+            </button>
           </div>
 
-          <div class="table-toolbar width-full p-padding-16">
+          <div class="table-toolbar width-full p-padding-24">
             <div class="export-buttons">
-              <button class="btn-export">
-                <svg class="icon-export icon-pdf-red" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5z"/>
-                </svg>
-                <span>Ekspor PDF</span>
+              <button class="btn-rbt-small">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="btn-rbt-icon-sm"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9.5 8.5c0 .83-.67 1.5-1.5 1.5H7v2H5.5V8H8c.83 0 1.5.67 1.5 1.5v2z"/></svg>
+                <span>PDF</span>
               </button>
-              <button class="btn-export">
-                <svg class="icon-export icon-excel-green" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm1.8 18H14l-2-3.4-2 3.4H8.2l2.9-4.5L8.3 9h1.9l1.8 3.2L13.8 9h1.9l-2.8 4.4 2.9 4.6z"/>
-                </svg>
-                <span>Ekspor Excel</span>
+              <button class="btn-rbt-small">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="btn-rbt-icon-sm"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5.8 14H12l-2-3.4-2 3.4H6.2l2.9-4.5L6.3 9h1.9l1.8 3.2L11.8 9h1.9l-2.8 4.4 2.9 4.6z"/></svg>
+                <span>Excel</span>
+              </button>
+              <button class="btn-rbt-small">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-rbt-icon-sm"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                <span>Panduan Pengisian</span>
               </button>
             </div>
 
@@ -259,30 +306,43 @@
 
               <div class="search-control">
                 <label for="tableSearch">Search:</label>
-                <input type="text" id="tableSearch" class="search-input" />
+                <input type="text" id="tableSearch" class="search-input input-wide-260" />
               </div>
             </div>
           </div>
 
-          <!-- Datatable Container -->
-          <div class="rbt-table-wrapper">
-            <table class="rbt-data-table">
+          <div class="rbt-table-wrapper p-padding-horizontal-24">
+            <table class="permasalahan-data-table">
               <thead>
                 <tr>
-                  <th class="col-center w-rbt-aksi">Aksi</th>
-                  <th class="w-rbt-no">No.</th>
-                  <th class="w-rbt-tema">Tema</th>
-                  <th class="w-rbt-sasaran">Sasaran Tematik Roadmap</th>
-                  <th class="w-rbt-indikator">Indikator</th>
-                  <th class="w-rbt-target">Target</th>
-                  <th class="w-rbt-satuan">Satuan Target</th>
-                  <th class="w-rbt-realisasi">Realisasi</th>
-                  <th class="w-rbt-capaian">Capaian</th>
-                  <th class="w-rbt-catatan">Catatan</th>
+                  <th class="col-center w-p-no">No.</th>
+                  <th class="w-p-tema">Tema</th>
+                  <th class="w-p-sasaran-ind">Sasaran & Indikator Roadmap</th>
+                  <th class="w-p-bottleneck">Permasalahan (bottleneck)</th>
+                  <th class="w-p-sasaran">Sasaran</th>
+                  <th class="w-p-indikator">Indikator</th>
+                  <th class="w-p-target">Target</th>
+                  <th class="w-p-satuan">Satuan</th>
+                  <th class="col-center w-p-aksi">Aksi</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
+                  <td class="col-center font-bold text-navy-dark">1</td>
+                  <td class="text-navy-dark">Pengentasan kemiskinan</td>
+                  <td>
+                    <div class="sasaran-ind-stack">
+                      <span class="stack-title">Sasaran roadmap:</span>
+                      <span class="stack-val">Menurunnya angka kemiskinan</span>
+                      <span class="stack-title pt-4">Indikator roadmap:</span>
+                      <span class="stack-val">Persentase penduduk</span>
+                    </div>
+                  </td>
+                  <td class="text-navy-dark">Meningkatnya mutu dan relevansi pendidikan</td>
+                  <td class="text-navy-dark">Harapan lama sekolah (HLS)</td>
+                  <td class="text-navy-dark">Harapan lama sekolah (HLS)</td>
+                  <td class="text-navy-dark">12</td>
+                  <td class="text-navy-dark">Tahun</td>
                   <td class="col-center">
                     <div class="action-dropdown-wrapper">
                       <button class="btn-action-more" aria-label="Aksi">⋮</button>
@@ -303,32 +363,16 @@
                       </div>
                     </div>
                   </td>
-                  <td class="font-semibold text-dark">1</td>
-                  <td class="font-semibold text-navy">Pengentasan Kemiskinan</td>
-                  <td>
-                    <div class="badge-sasaran-gray">
-                      Menurunnya Angka Kemiskinan
-                    </div>
-                  </td>
-                  <td class="text-muted">Persentase Penduduk Miskin</td>
-                  <td>10.85</td>
-                  <td>persen</td>
-                  <td>5</td>
-                  <td>46.0829493088</td>
-                  <td class="text-catatan-sm">
-                    Realisasi indikator Harapan Lama Sekolah telah mencapai 11.85 tahun dari target 12 tahun melalui optimalisasi program beasiswa dan pemerataan tenaga pengajar.
-                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <!-- Datatable Footer -->
           <div class="rekap-table-footer">
             <span class="entries-info">Showing 1 to 1 of 1 entries</span>
             <div class="pagination-nav">
               <button class="btn-page disabled">Previous</button>
-              <button class="btn-page active">1</button>
+              <button class="btn-page active border-light-gray">1</button>
               <button class="btn-page disabled">Next</button>
             </div>
           </div>
@@ -341,7 +385,6 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      /*DROPDOWN*/
       const dropdowns = document.querySelectorAll('.dropdown-container');
       dropdowns.forEach(dropdown => {
         const trigger = dropdown.querySelector('.dropdown-trigger');
@@ -362,7 +405,6 @@
         }
       });
 
-      /* ACTION POPUP MENU */
       const actionWrappers = document.querySelectorAll('.action-dropdown-wrapper');
       actionWrappers.forEach(wrapper => {
         const btnMore = wrapper.querySelector('.btn-action-more');
