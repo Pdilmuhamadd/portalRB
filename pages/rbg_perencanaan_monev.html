@@ -14,17 +14,19 @@
 <body>
   <div class="portal-RB">
     
-    <!-- NAVBAR -->
+    <!-- HEADER / NAVBAR -->
     <header class="header">
       <div class="nav-container">
-        <img class="logo-main" src="../assets/img/logo-portal-rb.png" alt="Logo Portal RB" />
+        <a href="../index.html">
+          <img class="logo-main" src="../assets/img/logo-portal-rb.png" alt="Logo Portal RB" />
+        </a>
         
         <nav class="nav-menu">
           <a href="../index.html" class="nav-link">Beranda</a>
           <a href="dokumen.html" class="nav-link">Dokumen</a>
 
-          <!-- Rencana Aksi -->
-          <div class="dropdown-container active">
+          <!-- Rencana Aksi Dropdown -->
+          <div class="dropdown-container">
             <div class="dropdown-trigger">
               <span class="nav-link active">Rencana Aksi</span>
               <span class="chevron-icon">▼</span>
@@ -41,14 +43,14 @@
                         <div class="icon-box"><img class="card-icon" src="../assets/img/icon-perencanaan.png" alt="Icon" /></div>
                         <div class="card-text">
                           <span class="card-title">Perencanaan dan Monev</span>
-                          <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                          <span class="card-desc">Perencanaan dan evaluasi berkala pelaksanaan RB General</span>
                         </div>
                       </a>
                       <a href="rbg_rekap_data.html" class="menu-card">
                         <div class="icon-box"><img class="card-icon" src="../assets/img/icon-rekap.png" alt="Icon" /></div>
                         <div class="card-text">
                           <span class="card-title">Rekap Data</span>
-                          <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                          <span class="card-desc">Rekapitulasi capaian dan data evaluasi RB General</span>
                         </div>
                       </a>
                     </div>
@@ -61,21 +63,21 @@
                         <div class="icon-box"><img class="card-icon" src="../assets/img/icon-tema.png" alt="Icon" /></div>
                         <div class="card-text">
                           <span class="card-title">Tema dan Sasaran Tematik</span>
-                          <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                          <span class="card-desc">Pengaturan tema prioritas dan penetapan sasaran roadmap</span>
                         </div>
                       </a>
                       <a href="rbt_permasalahan_dan_rencana_aksi.html" class="menu-card">
                         <div class="icon-box"><img class="card-icon" src="../assets/img/icon-permasalahan.png" alt="Icon" /></div>
                         <div class="card-text">
                           <span class="card-title">Permasalahan dan Rencana Aksi</span>
-                          <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                          <span class="card-desc">Identifikasi bottleneck masalah dan penyusunan rencana aksi</span>
                         </div>
                       </a>
                       <a href="rbt_rekap_data.html" class="menu-card">
                         <div class="icon-box"><img class="card-icon" src="../assets/img/icon-rekap.png" alt="Icon" /></div>
                         <div class="card-text">
                           <span class="card-title">Rekap Data</span>
-                          <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                          <span class="card-desc">Monitoring menyeluruh capaian RB Tematik</span>
                         </div>
                       </a>
                     </div>
@@ -85,7 +87,7 @@
             </div>
           </div>
 
-          <!-- Evaluasi -->
+          <!-- Evaluasi Dropdown -->
           <div class="dropdown-container">
             <div class="dropdown-trigger">
               <span class="nav-link">Evaluasi</span>
@@ -100,14 +102,14 @@
                     <div class="icon-box"><img class="card-icon" src="../assets/img/icon-hasil-evaluasi.png" alt="Icon" /></div>
                     <div class="card-text">
                       <span class="card-title">Hasil Evaluasi</span>
-                      <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                      <span class="card-desc">Ringkasan evaluasi dan indeks reformasi birokrasi tahun berjalan</span>
                     </div>
                   </a>
                   <a href="#" class="menu-card">
                     <div class="icon-box"><img class="card-icon" src="../assets/img/icon-evaluasi-2023.png" alt="Icon" /></div>
                     <div class="card-text">
                       <span class="card-title">Hasil Evaluasi 2023</span>
-                      <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                      <span class="card-desc">Laporan dan arsip hasil evaluasi periode sebelumnya</span>
                     </div>
                   </a>
                 </div>
@@ -115,7 +117,7 @@
             </div>
           </div>
 
-          <!-- Pelaporan LHKAN -->
+          <!-- Pelaporan LHKAN Dropdown -->
           <div class="dropdown-container">
             <div class="dropdown-trigger">
               <span class="nav-link">Pelaporan LHKAN</span>
@@ -130,14 +132,14 @@
                     <div class="icon-box"><img class="card-icon" src="../assets/img/icon-coi.png" alt="Icon" /></div>
                     <div class="card-text">
                       <span class="card-title">Form Input</span>
-                      <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                      <span class="card-desc">Formulir pengisian kepatuhan pelaporan LHKAN</span>
                     </div>
                   </a>
                   <a href="riwayat_pelaporan.html" class="menu-card">
                     <div class="icon-box"><img class="card-icon" src="../assets/img/icon-lkhan.png" alt="Icon" /></div>
                     <div class="card-text">
                       <span class="card-title">Riwayat Pelaporan</span>
-                      <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                      <span class="card-desc">Log data pelaporan dan rekapitulasi kepatuhan</span>
                     </div>
                   </a>
                 </div>
@@ -172,21 +174,22 @@
       </div>
     </div>
 
-    <!-- MAIN -->
+    <!-- MAIN CONTENT -->
     <main class="page-main-content">
       <div class="page-container-wide">
         
-        <!-- FILTER INDIKATOR CARD -->
-        <div class="filter-card-container">
-          <div class="filter-row">
-            <div class="filter-field">
-              <label class="filter-label">Indikator</label>
+        <!-- SECTION 1: FILTER INDIKATOR CARD (FIGMA) -->
+        <div class="rbg-filter-card">
+          <div class="rbg-filter-row">
+            <div class="rbg-filter-field">
+              <label class="rbg-filter-label">Indikator</label>
               <div class="select-container">
-                <select class="custom-select select-bg-light">
+                <select class="custom-select select-bg-light" id="filterIndikatorRbg">
                   <option value="" disabled selected hidden>Pilih Indikator</option>
-                  <option value="1">Tingkat Capaian Sistem Kerja untuk Penyederhanaan Birokrasi</option>
-                  <option value="2">Indeks SPBE</option>
-                  <option value="3">Tingkat Implementasi Kebijakan Arsitektur SPBE</option>
+                  <option value="all">Semua Indikator</option>
+                  <option value="Tingkat Capaian Sistem Kerja untuk Penyederhanaan Birokrasi">Tingkat Capaian Sistem Kerja untuk Penyederhanaan Birokrasi</option>
+                  <option value="Indeks SPBE">Indeks SPBE</option>
+                  <option value="Tingkat Implementasi Kebijakan Arsitektur SPBE">Tingkat Implementasi Kebijakan Arsitektur SPBE</option>
                 </select>
                 <div class="select-arrow">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -195,244 +198,230 @@
                 </div>
               </div>
             </div>
-            <button class="btn-primary-blue">Lihat Data</button>
+            <button type="button" class="rbg-btn-lihat-data" id="btnLihatDataRbg">Lihat Data</button>
           </div>
         </div>
-        
 
-        <!-- DATATABLE TOOL(EXPORT, ENTRIES & SEARCH) -->
-        <div class="table-toolbar">
-          <div class="export-buttons">
-            <button class="btn-export">
-              <svg class="icon-export icon-pdf-red" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5z"/>
-              </svg>
-              <span>Ekspor PDF</span>
-            </button>
-            <button class="btn-export">
-              <svg class="icon-export icon-excel-green" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm1.8 18H14l-2-3.4-2 3.4H8.2l2.9-4.5L8.3 9h1.9l1.8 3.2L13.8 9h1.9l-2.8 4.4 2.9 4.6z"/>
-              </svg>
-              <span>Ekspor Excel</span>
-            </button>
-          </div>
+        <!-- SECTION 2: DATATABLE REKAP (EXPORT, ENTRIES & SEARCH) -->
+        <div class="rbg-table-card">
+          <!-- Toolbar -->
+          <div class="rbt-rekap-toolbar">
+            <div class="export-buttons" style="display: flex; gap: 10px;">
+              <button type="button" class="btn-export-subtle-pdf" onclick="alert('Mengekspor data ke PDF...')">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9.5 8.5c0 .83-.67 1.5-1.5 1.5H7v2H5.5V8H8c.83 0 1.5.67 1.5 1.5v2z"/>
+                </svg>
+                <span>Ekspor PDF</span>
+              </button>
+              <button type="button" class="btn-export-subtle-excel" onclick="alert('Mengekspor data ke Excel...')">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5.8 14H12l-2-3.4-2 3.4H6.2l2.9-4.5L6.3 9h1.9l1.8 3.2L11.8 9h1.9l-2.8 4.4 2.9 4.6z"/>
+                </svg>
+                <span>Ekspor Excel</span>
+              </button>
+            </div>
 
-          <div class="datatable-controls">
-            <div class="entries-control">
-              <span>Show</span>
-              <div class="select-container select-sm">
-                <select class="custom-select select-compact">
-                  <option value="10" selected>10</option>
-                  <option value="25">25</option>
-                  <option value="50">50</option>
-                </select>
-                <div class="select-arrow">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
+            <div class="rbt-toolbar-controls">
+              <div class="rbt-entries-control">
+                <span>Show</span>
+                <div class="select-container">
+                  <select class="custom-select select-compact-sm">
+                    <option value="10" selected>10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                  </select>
                 </div>
+                <span>entries</span>
               </div>
-              <span>entries</span>
-            </div>
 
-            <div class="search-control">
-              <label for="tableSearch">Search:</label>
-              <input type="text" id="tableSearch" class="search-input" />
+              <div class="rbt-search-control">
+                <label for="tableSearch">Search:</label>
+                <input type="text" id="tableSearch" class="input-search-rbt" placeholder="Cari data..." />
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- DATATABLE UTAMA -->
-        <div class="datatable-wrapper">
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th class="col-center w-no">No.</th>
-                <th class="w-kegiatan">Kegiatan Utama</th>
-                <th class="w-indikator">Indikator</th>
-                <th class="w-baseline">Baseline</th>
-                <th class="w-target">Target</th>
-                <th class="w-keterangan">Keterangan</th>
-                <th class="col-center w-aksi-col">Aksi</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- baris 1 -->
-              <tr>
-                <td class="col-center font-bold">1</td>
-                <td class="font-semibold text-dark">
-                  Pelaksanaan Sistem Kerja Baru dengan Model Fleksibel bagi Pegawai ASN
-                </td>
-                <td class="text-muted">
-                  Tingkat Capaian Sistem Kerja untuk Penyederhanaan Birokrasi
-                </td>
-                <td>
-                  <div class="info-stack">
-                    <span class="info-label">Tahun: 2025</span>
-                    <span class="info-label">Realisasi: 1</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="info-stack">
-                    <span class="info-label">Tahun: 2028</span>
-                    <span class="info-label">Target: 5</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="info-stack text-sm">
-                    <span>Realisasi Indikator: -</span>
-                    <span>Capaian Indikator: -</span>
-                    <span>Catatan: -</span>
-                  </div>
-                </td>
-                <td class="col-center">
-                  <div class="action-dropdown-wrapper">
-                    <button class="btn-action-dropdown">
-                      <span>Aksi</span>
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                      </svg>
-                    </button>
-                  
-                    <!-- Popup Aksi Rencana Aksi & Monev -->
-                    <div class="action-popup-menu renaksi-popup">
-                      <!-- Renaksi + Badge -->
-                      <a href="#" class="action-popup-item">
-                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <!-- Main Datatable -->
+          <div class="rbg-table-wrapper">
+            <table class="rbg-data-table" id="rbgDataTable">
+              <thead>
+                <tr>
+                  <th class="w-rbg-no">No.</th>
+                  <th class="w-rbg-kegiatan">Kegiatan Utama</th>
+                  <th class="w-rbg-indikator">Indikator</th>
+                  <th class="w-rbg-baseline">Baseline</th>
+                  <th class="w-rbg-target">Target</th>
+                  <th class="w-rbg-keterangan">Keterangan</th>
+                  <th class="w-rbg-aksi">Aksi</th>
+                </tr>
+              </thead>
+              <tbody id="rbgTableBody">
+                <!-- Baris 1 -->
+                <tr data-row-id="1">
+                  <td class="w-rbg-no font-semibold">1</td>
+                  <td class="w-rbg-kegiatan">
+                    Pelaksanaan Sistem Kerja Baru dengan Model Fleksibel bagi Pegawai ASN
+                  </td>
+                  <td class="w-rbg-indikator">
+                    Tingkat Capaian Sistem Kerja untuk Penyederhanaan Birokrasi
+                  </td>
+                  <td class="cell-baseline">
+                    <div class="rbg-info-stack">
+                      <span>Tahun: 2025</span>
+                      <span>Realisasi: 1</span>
+                    </div>
+                  </td>
+                  <td class="cell-target">
+                    <div class="rbg-info-stack">
+                      <span>Tahun: 2028</span>
+                      <span>Target: 5</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="rbg-info-stack keterangan-stack">
+                      <span>Realisasi Indikator: -</span>
+                      <span>Capaian Indikator: -</span>
+                      <span>Catatan: -</span>
+                    </div>
+                  </td>
+                  <td class="w-rbg-aksi">
+                    <div class="rbg-action-grid">
+                      <button type="button" class="btn-action-badge badge-renaksi" title="Renaksi">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                           <polyline points="14 2 14 8 20 8"></polyline>
                           <line x1="16" y1="13" x2="8" y2="13"></line>
                           <line x1="16" y1="17" x2="8" y2="17"></line>
                         </svg>
-                        <span class="action-text-renaksi">Renaksi</span>
-                        <span class="renaksi-badge">0</span>
-                      </a>
-                    
-                      <!-- Monev -->
-                      <a href="#" class="action-popup-item">
-                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        <span>Renaksi</span>
+                      </button>
+                      <button type="button" class="btn-action-badge badge-monev" title="Monev">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <line x1="18" y1="20" x2="18" y2="10"></line>
+                          <line x1="12" y1="20" x2="12" y2="4"></line>
+                          <line x1="6" y1="20" x2="6" y2="14"></line>
                         </svg>
                         <span>Monev</span>
-                      </a>
-                    
-                      <!-- Ubah -->
-                      <a href="#" class="action-popup-item">
-                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      </button>
+                      <button type="button" class="btn-action-badge badge-ubah" 
+                        data-kegiatan="Pelaksanaan Sistem Kerja Baru dengan Model Fleksibel bagi Pegawai ASN" 
+                        data-indikator="Tingkat Capaian Sistem Kerja untuk Penyederhanaan Birokrasi" 
+                        data-baseline-tahun="2025" 
+                        data-baseline-realisasi="1" 
+                        data-target-tahun="2028" 
+                        data-target-nilai="5"
+                        title="Ubah Data Baseline & Target">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                           <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                           <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
                         </svg>
                         <span>Ubah</span>
-                      </a>
-                    
-                      <div class="action-menu-divider"></div>
-                    
-                      <!-- Hapus (Red) -->
-                      <a href="#" class="action-popup-item item-danger">
-                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      </button>
+                      <button type="button" class="btn-action-badge badge-hapus" title="Hapus">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                           <polyline points="3 6 5 6 21 6"></polyline>
                           <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
                         </svg>
                         <span>Hapus</span>
-                      </a>
+                      </button>
                     </div>
-                  </div>
-                </td>
-              </tr>
+                  </td>
+                </tr>
 
-              <!-- baris 2 -->
-              <tr>
-                <td class="col-center font-bold">2</td>
-                <td class="font-semibold text-dark">
-                  Peningkatan Indeks SPBE
-                </td>
-                <td class="text-muted">
-                  Indeks SPBE
-                </td>
-                <td>
-                  <div class="info-stack">
-                    <span class="info-label">Tahun: 2025</span>
-                    <span class="info-label">Realisasi: 1</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="info-stack">
-                    <span class="info-label">Tahun: 2028</span>
-                    <span class="info-label">Target: 5</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="info-stack text-sm">
-                    <span>Realisasi Indikator: -</span>
-                    <span>Capaian Indikator: -</span>
-                    <span>Catatan: -</span>
-                  </div>
-                </td>
-                <td class="col-center">
-                  <div class="action-dropdown-wrapper">
-                    <button class="btn-action-dropdown">
-                      <span>Aksi</span>
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="6 9 12 15 18 9"></polyline>
-                      </svg>
-                    </button>
-
-                    <!-- Popup Aksi Rencana Aksi & Monev -->
-                    <div class="action-popup-menu renaksi-popup">
-                      <!-- Renaksi + Badge -->
-                      <a href="#" class="action-popup-item">
-                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <!-- Baris 2 (Kegiatan dengan 2 Indikator) -->
+                <tr data-row-id="2">
+                  <td class="w-rbg-no font-semibold" rowspan="2">2</td>
+                  <td class="w-rbg-kegiatan" rowspan="2">
+                    Pelaksanaan Arsitektur SPBE Nasional
+                  </td>
+                  <td class="w-rbg-indikator">
+                    Indeks SPBE
+                  </td>
+                  <td class="cell-baseline">
+                    <div class="rbg-info-stack">
+                      <span>Tahun: 2025</span>
+                      <span>Realisasi: 3</span>
+                    </div>
+                  </td>
+                  <td class="cell-target">
+                    <div class="rbg-info-stack">
+                      <span>Tahun: 2026</span>
+                      <span>Target: 3.5</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="rbg-info-stack keterangan-stack">
+                      <span>Realisasi Indikator: -</span>
+                      <span>Capaian Indikator: -</span>
+                      <span>Catatan: -</span>
+                    </div>
+                  </td>
+                  <td class="w-rbg-aksi">
+                    <div class="rbg-action-grid">
+                      <button type="button" class="btn-action-badge badge-renaksi" title="Renaksi">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                           <polyline points="14 2 14 8 20 8"></polyline>
-                          <line x1="16" y1="13" x x2="8" y2="13"></line>
+                          <line x1="16" y1="13" x2="8" y2="13"></line>
                           <line x1="16" y1="17" x2="8" y2="17"></line>
                         </svg>
                         <span>Renaksi</span>
-                        <span class="renaksi-badge">0</span>
-                      </a>
-                      <!-- Monev -->
-                      <a href="#" class="action-popup-item">
-                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                      </button>
+                      <button type="button" class="btn-action-badge badge-monev" title="Monev">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <line x1="18" y1="20" x2="18" y2="10"></line>
+                          <line x1="12" y1="20" x2="12" y2="4"></line>
+                          <line x1="6" y1="20" x2="6" y2="14"></line>
                         </svg>
                         <span>Monev</span>
-                      </a>
-                      <!-- Ubah -->
-                      <a href="#" class="action-popup-item">
-                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      </button>
+                      <button type="button" class="btn-action-badge badge-ubah" 
+                        data-kegiatan="Pelaksanaan Arsitektur SPBE Nasional" 
+                        data-indikator="Indeks SPBE" 
+                        data-baseline-tahun="2025" 
+                        data-baseline-realisasi="3" 
+                        data-target-tahun="2026" 
+                        data-target-nilai="3.5"
+                        title="Ubah Data Baseline & Target">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                           <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                           <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
                         </svg>
                         <span>Ubah</span>
-                      </a>
-                      <div class="action-menu-divider"></div>
-                      <!-- Hapus (Red) -->
-                      <a href="#" class="action-popup-item item-danger">
-                        <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      </button>
+                      <button type="button" class="btn-action-badge badge-hapus" title="Hapus">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                           <polyline points="3 6 5 6 21 6"></polyline>
                           <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
                         </svg>
                         <span>Hapus</span>
-                      </a>
+                      </button>
                     </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+                  </td>
+                </tr>
 
-        <!-- PAGINATION & FOOTER INFO -->
-        <div class="table-pagination-footer">
-          <div class="entries-info">
-            Showing 1 to 2 of 2 entries
+                <!-- Baris 2 (Indikator Kedua) -->
+                <tr data-row-id="2-sub">
+                  <td class="w-rbg-indikator">
+                    Tingkat Implementasi Kebijakan Arsitektur SPBE
+                  </td>
+                  <td class="cell-baseline">-</td>
+                  <td class="cell-target">-</td>
+                  <td>-</td>
+                  <td class="w-rbg-aksi">-</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="pagination-nav">
-            <button class="btn-page disabled">Previous</button>
-            <button class="btn-page active">1</button>
-            <button class="btn-page disabled">Next</button>
+
+          <!-- Pagination Footer -->
+          <div class="rekap-table-footer">
+            <span class="entries-info" id="rbgEntriesInfo">Showing 1 to 2 of 2 entries</span>
+            <div class="pagination-nav">
+              <button class="btn-page disabled" aria-label="Previous">Previous</button>
+              <button class="btn-page active">1</button>
+              <button class="btn-page disabled" aria-label="Next">Next</button>
+            </div>
           </div>
         </div>
 
@@ -441,7 +430,67 @@
 
   </div>
 
-  <!-- JAVASCRIPT UTAMA TERPUSAT -->
+  <!-- ================= MODAL: UBAH DATA BASELINE & TARGET (FIGMA) ================= -->
+  <div class="rbt-modal-overlay" id="modalUbahBaselineTarget">
+    <div class="rbt-modal-dialog">
+      <div class="rbt-modal-header">
+        <h3 class="rbt-modal-title">Ubah Data Baseline & Target</h3>
+        <button type="button" class="btn-modal-close" id="btnCloseModalUbah">&times;</button>
+      </div>
+      <form id="formUbahBaselineTarget">
+        <div class="rbt-modal-body">
+          
+          <!-- Summary Box (Kegiatan Utama & Indikator) -->
+          <div class="modal-summary-box">
+            <div class="modal-summary-label">KEGIATAN UTAMA</div>
+            <div class="modal-summary-val" id="modalKegiatanUtama">Pelaksanaan Sistem Kerja Baru dengan Model Fleksibel bagi Pegawai ASN</div>
+            <div class="modal-summary-label" style="margin-top: 10px;">INDIKATOR</div>
+            <div class="modal-summary-val" id="modalIndikator">Tingkat Capaian Sistem Kerja untuk Penyederhanaan Birokrasi</div>
+          </div>
+
+          <!-- 2 Kolom: Baseline & Target -->
+          <div class="grid-2-cols" style="margin-top: 8px;">
+            <!-- Kolom Kiri: Baseline -->
+            <div class="modal-section-col">
+              <h4 class="modal-col-heading">Baseline</h4>
+              <div class="modal-form-group">
+                <label class="modal-form-label">Tahun</label>
+                <input type="text" class="modal-input" id="inputBaselineTahun" value="2025" required />
+              </div>
+              <div class="modal-form-group">
+                <label class="modal-form-label">Realisasi</label>
+                <input type="text" class="modal-input" id="inputBaselineRealisasi" value="1" required />
+              </div>
+            </div>
+
+            <!-- Kolom Kanan: Target -->
+            <div class="modal-section-col">
+              <h4 class="modal-col-heading">Target</h4>
+              <div class="modal-form-group">
+                <label class="modal-form-label">Tahun</label>
+                <input type="text" class="modal-input" id="inputTargetTahun" value="2028" required />
+              </div>
+              <div class="modal-form-group">
+                <label class="modal-form-label">Target</label>
+                <input type="text" class="modal-input" id="inputTargetNilai" value="5" required />
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="rbt-modal-footer">
+          <button type="button" class="btn-modal-cancel" id="btnCancelModalUbah">Batal</button>
+          <button type="submit" class="btn-modal-save">Simpan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="rbt-toast" id="rbgToast">Data berhasil diperbarui!</div>
+
+  <!-- JAVASCRIPT UTAMA TERPUSAT & MODUL RB GENERAL (TERPISAH BERSIH) -->
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/pages/rb_general.js"></script>
 </body>
 </html>

@@ -17,9 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 5. Modal Popup Upload & Dropzone (Khusus Halaman Dokumen)
   initModals();
-
-  // 6. Dynamic PIC Form Generator (Khusus Halaman LHKAN)
-  initDynamicForm();
 });
 
 /**
@@ -35,16 +32,16 @@ function initMegamenu() {
       trigger.addEventListener('click', (e) => {
         e.stopPropagation();
         dropdowns.forEach((d) => {
-          if (d !== dropdown) d.classList.remove('active');
+          if (d !== dropdown) d.classList.remove('open');
         });
-        dropdown.classList.toggle('active');
+        dropdown.classList.toggle('open');
       });
     }
   });
 
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.megamenu-dropdown')) {
-      dropdowns.forEach((d) => d.classList.remove('active'));
+      dropdowns.forEach((d) => d.classList.remove('open'));
     }
   });
 }
@@ -250,33 +247,5 @@ function initModals() {
   function showSelectedFileName(name) {
     const mainText = dropzone.querySelector('.dropzone-text-main');
     if (mainText) mainText.textContent = `File terpilih: ${name}`;
-  }
-}
-
-/**
- * 6. Dynamic PIC Form Generator (Halaman Form LHKAN)
- */
-function initDynamicForm() {
-  const btnAddPic = document.getElementById('btnAddPic');
-  const picGrid = document.getElementById('picGrid');
-  let picCount = 1;
-
-  if (btnAddPic && picGrid) {
-    btnAddPic.addEventListener('click', () => {
-      picCount++;
-      const picRow = document.createElement('div');
-      picRow.className = 'pic-row';
-      picRow.innerHTML = `
-        <div class="form-group flex-1">
-          <label class="form-label">Nama PIC ${picCount} <span class="text-required">*</span></label>
-          <input type="text" class="custom-input" placeholder="Masukkan nama PIC" required />
-        </div>
-        <div class="form-group flex-1">
-          <label class="form-label">Nomor HP PIC ${picCount} <span class="text-required">*</span></label>
-          <input type="tel" class="custom-input" placeholder="Masukkan nomor HP aktif" required />
-        </div>
-      `;
-      picGrid.appendChild(picRow);
-    });
   }
 }

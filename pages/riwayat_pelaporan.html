@@ -113,7 +113,7 @@
             </div>
           </div>
 
-          <div class="dropdown-container active">
+          <div class="dropdown-container">
             <div class="dropdown-trigger">
               <span class="nav-link active">Pelaporan LHKAN</span>
               <span class="chevron-icon">▼</span>
@@ -159,9 +159,9 @@
           </svg>
           <a href="../index.html" class="breadcrumb-link">Beranda</a>
           <span class="breadcrumb-separator">&gt;</span>
-          <span class="breadcrumb-link">Pelaporan LHKAN</span>
+          <span class="breadcrumb-link">Rencana Aksi</span>
           <span class="breadcrumb-separator">&gt;</span>
-          <span class="breadcrumb-current">Riwayat Pelaporan</span>
+          <span class="breadcrumb-current">Pelaporan LHKAN</span>
         </div>
       </div>
     </div>
@@ -175,7 +175,7 @@
           <p class="riwayat-subtitle">Pantau status dan riwayat pelaporan Lembar Kerja Hasil Penilaian Nasional.</p>
         </div>
 
-        <!-- SECTION 1: SUMMARY STATISTICS CARDS -->
+        <!-- SECTION 1: SUMMARY STATISTICS CARDS (FIGMA IMAGE 1 & 2) -->
         <div class="riwayat-stats-grid">
           
           <div class="stat-card">
@@ -290,7 +290,7 @@
                     <span class="status-badge badge-disetujui">Disetujui</span>
                   </td>
                   <td class="col-right">
-                    <button class="btn-detail-outline">
+                    <button type="button" class="btn-detail-outline">
                       <svg class="btn-detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                         <circle cx="12" cy="12" r="3"></circle>
@@ -309,7 +309,7 @@
                     <span class="status-badge badge-proses">Proses</span>
                   </td>
                   <td class="col-right">
-                    <button class="btn-detail-outline">
+                    <button type="button" class="btn-detail-outline">
                       <svg class="btn-detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                         <circle cx="12" cy="12" r="3"></circle>
@@ -328,7 +328,7 @@
                     <span class="status-badge badge-revisi">Revisi</span>
                   </td>
                   <td class="col-right">
-                    <button class="btn-detail-outline">
+                    <button type="button" class="btn-detail-outline">
                       <svg class="btn-detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                         <circle cx="12" cy="12" r="3"></circle>
@@ -341,11 +341,11 @@
             </table>
           </div>
 
-          <div class="rekap-table-footer p-padding-horizontal-32">
-            <span class="entries-info">Showing 1 to 2 of 2 entries</span>
+          <div class="rekap-table-footer">
+            <span class="entries-info">Showing 1 to 3 of 3 entries</span>
             <div class="pagination-nav">
-              <button class="btn-page disabled" aria-label="Previous">&lt;</button>
-              <button class="btn-page disabled" aria-label="Next">&gt;</button>
+              <button type="button" class="btn-page-arrow" disabled aria-label="Previous">&lt;</button>
+              <button type="button" class="btn-page-arrow" disabled aria-label="Next">&gt;</button>
             </div>
           </div>
         </div>
@@ -353,9 +353,61 @@
       </div>
     </main>
 
+    <!-- MODAL DETAIL PELAPORAN LHKAN -->
+    <div class="lhkan-modal-overlay" id="modalDetailLhkan">
+      <div class="lhkan-modal-dialog">
+        <div class="lhkan-modal-header">
+          <h3 class="lhkan-modal-title">Detail Pelaporan LHKAN</h3>
+          <button type="button" class="btn-modal-close" style="background:none; border:none; font-size:20px; cursor:pointer; color:#64748b;">&times;</button>
+        </div>
+        <div class="lhkan-modal-body">
+          <div class="modal-detail-row">
+            <span class="modal-detail-label">Tahun & Periode</span>
+            <span class="modal-detail-val" id="modalDetailTahunPeriode">2024 - Q1</span>
+          </div>
+          <div class="modal-detail-row">
+            <span class="modal-detail-label">Instansi</span>
+            <span class="modal-detail-val" id="modalDetailInstansi">Kementerian Dalam Negeri</span>
+          </div>
+          <div class="modal-detail-row">
+            <span class="modal-detail-label">Tanggal Kirim</span>
+            <span class="modal-detail-val" id="modalDetailTglKirim">12 Mar 2024</span>
+          </div>
+          <div class="modal-detail-row">
+            <span class="modal-detail-label">Status Verifikasi</span>
+            <span id="modalDetailStatusBadge" class="status-badge badge-disetujui">Disetujui</span>
+          </div>
+          <div class="modal-detail-row">
+            <span class="modal-detail-label">Jumlah Total Aparatur</span>
+            <span class="modal-detail-val">1.250 Orang</span>
+          </div>
+          <div class="modal-detail-row">
+            <span class="modal-detail-label">Wajib LHKPN</span>
+            <span class="modal-detail-val">450 Orang (100% Lapor)</span>
+          </div>
+          <div class="modal-detail-row">
+            <span class="modal-detail-label">Non Wajib LHKPN (SPT)</span>
+            <span class="modal-detail-val">800 Orang (100% Lapor)</span>
+          </div>
+          <div class="modal-detail-row">
+            <span class="modal-detail-label">Total Belum Lapor</span>
+            <span class="modal-detail-val" style="color: #16a34a;">0 Orang</span>
+          </div>
+          <div class="modal-detail-row" style="border-bottom: none;">
+            <span class="modal-detail-label">File Rekapitulasi</span>
+            <a href="https://drive.google.com" target="_blank" style="color: #0c6ad4; text-decoration: underline; font-size: 12.5px;">Buka Google Drive</a>
+          </div>
+        </div>
+        <div class="lhkan-modal-footer">
+          <button type="button" class="btn-modal-cancel" style="padding: 6px 16px; border: 1px solid #cbd5e1; background: #ffffff; border-radius: 4px; cursor: pointer; font-size: 13px;">Tutup</button>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <!-- JAVASCRIPT UTAMA TERPUSAT -->
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/pages/pelaporan_lhkan.js"></script>
 </body>
 </html>

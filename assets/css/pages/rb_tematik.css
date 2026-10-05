@@ -1,0 +1,1405 @@
+/* assets/css/pages/rb_tematik.css */
+/* Styles for RB Tematik (Tema & Sasaran, Permasalahan, and Rencana Aksi) */
+
+/* ================= 1. CARD & FILTER CONTAINERS ================= */
+.rbt-form-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rbt-card-header {
+  background-color: #f8f9fa;
+  padding: 12px 24px;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.rbt-card-title-navy {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--secondary-navy);
+  margin: 0;
+}
+
+.rbt-card-body {
+  padding: 18px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-row-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.form-row-item:last-child,
+.form-row-item.border-none {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.form-row-label {
+  width: 180px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-gray);
+  flex-shrink: 0;
+}
+
+.form-row-input {
+  flex-grow: 1;
+}
+
+.font-value-muted {
+  font-size: 13px;
+  color: #334155;
+  font-weight: 500;
+}
+
+/* ================= 2. DATA TABLE CARD & TOOLBAR ================= */
+.rbt-data-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  overflow: visible !important;
+  margin-bottom: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  min-height: 520px;
+}
+
+
+.rbt-action-header {
+  background-color: #f8f9fa;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--card-border);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.rbt-action-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--secondary-navy);
+}
+
+.rbt-title-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--secondary-navy);
+}
+
+.rbt-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Figma Pill / Rounded Buttons */
+.btn-rbt-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #0c6ad4;
+  color: #ffffff;
+  font-size: 12.5px;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(12, 106, 212, 0.15);
+}
+
+.btn-rbt-primary:hover {
+  background-color: #0952a8;
+  transform: translateY(-1px);
+}
+
+.btn-rbt-primary svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Table Toolbar Buttons */
+.rbt-toolbar {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.rbt-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-toolbar-blue {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #0c6ad4;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-toolbar-blue:hover {
+  background-color: #0952a8;
+}
+
+.btn-toolbar-blue svg {
+  width: 15px;
+  height: 15px;
+}
+
+.btn-toolbar-subtle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  color: var(--text-dark);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--card-border);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-toolbar-subtle:hover {
+  background-color: var(--bg-light);
+  border-color: #a0a5b1;
+}
+
+.btn-toolbar-subtle svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* Controls */
+.rbt-toolbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rbt-entries-control,
+.rbt-search-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-gray);
+}
+
+.select-compact-sm {
+  height: 34px !important;
+  padding: 0 28px 0 10px !important;
+  font-size: 13px !important;
+  border-radius: 4px;
+}
+
+.input-search-rbt {
+  width: 220px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.input-search-rbt:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+}
+
+/* ================= 3. TABLES STYLING ================= */
+.rbt-table-wrapper {
+  width: 100%;
+  padding: 0 24px 24px 24px;
+  overflow: visible !important;
+  min-height: 380px;
+}
+
+.rbt-table-wrapper-flush {
+  padding: 0;
+}
+
+
+.permasalahan-data-table,
+.rencana-aksi-data-table,
+.rbt-general-data-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d0d7de;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.permasalahan-data-table thead tr,
+.rencana-aksi-data-table thead tr,
+.rbt-general-data-table thead tr {
+  background-color: #002b49;
+  color: #ffffff;
+}
+
+.permasalahan-data-table th,
+.rencana-aksi-data-table th,
+.rbt-general-data-table th {
+  padding: 14px 12px;
+  font-weight: 600;
+  text-align: left;
+  border-right: 1px solid #1c4b72;
+  border-bottom: none;
+  vertical-align: middle;
+  line-height: 1.3;
+}
+
+.permasalahan-data-table th:last-child,
+.rencana-aksi-data-table th:last-child,
+.rbt-general-data-table th:last-child {
+  border-right: none;
+}
+
+.permasalahan-data-table td,
+.rencana-aksi-data-table td,
+.rbt-general-data-table td {
+  padding: 14px 12px;
+  color: #191c1d;
+  border-top: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+  vertical-align: top;
+  line-height: 1.4;
+  background-color: #ffffff;
+}
+
+.permasalahan-data-table td:last-child,
+.rencana-aksi-data-table td:last-child,
+.rbt-general-data-table td:last-child {
+  border-right: none;
+}
+
+.permasalahan-data-table tr:hover td,
+.rencana-aksi-data-table tr:hover td,
+.rbt-general-data-table tr:hover td {
+  background-color: #fbfcfe;
+}
+
+/* Column Specific Widths for Permasalahan Table */
+.w-col-no { width: 48px; text-align: center; }
+.w-col-tema { width: 140px; }
+.w-col-sasaran-ind { width: 170px; }
+.w-col-bottleneck { width: 180px; }
+.w-col-sasaran { width: 130px; }
+.w-col-indikator { width: 130px; }
+.w-col-target { width: 65px; }
+.w-col-satuan { width: 75px; }
+.w-col-aksi { width: 60px; text-align: center; }
+
+/* Column Specific Widths for Rencana Aksi Table */
+.w-ra-no { width: 45px; text-align: center; }
+.w-ra-aksi { width: 230px; }
+.w-ra-output { width: 110px; }
+.w-ra-ind-out { width: 150px; }
+.w-ra-target { width: 90px; }
+.w-ra-anggaran { width: 115px; }
+.w-ra-fokus { width: 125px; }
+.w-ra-pelaksana { width: 140px; }
+.w-ra-koordinator { width: 130px; }
+.w-ra-action { width: 55px; text-align: center; }
+
+/* Stack display for Sasaran & Indikator Roadmap */
+.sasaran-ind-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sasaran-ind-stack .stack-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #002b49;
+}
+
+.sasaran-ind-stack .stack-val {
+  font-size: 13px;
+  color: #2b303b;
+}
+
+.target-quarter-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12px;
+  color: #333;
+}
+
+.target-quarter-stack .total-bold {
+  font-weight: 700;
+  margin-top: 4px;
+  border-top: 1px dashed #d0d7de;
+  padding-top: 2px;
+  color: #002b49;
+}
+
+/* ================= 4. THREE-DOTS ACTION POPUP MENU ================= */
+.action-dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.btn-action-more {
+  background: none;
+  border: none;
+  font-size: 18px;
+  line-height: 1;
+  color: #45556c;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.btn-action-more:hover {
+  background-color: #edf2f7;
+  color: var(--accent-blue);
+}
+
+.action-popup-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  width: 235px;
+  min-width: 220px;
+  background-color: #ffffff;
+  padding: 8px 6px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 3px 8px rgba(0, 0, 0, 0.04);
+  z-index: 1050;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-align: left;
+}
+
+.action-dropdown-wrapper.active .action-popup-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.action-popup-header {
+  padding: 4px 12px 6px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.action-popup-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1e293b;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.action-popup-item span {
+  font-size: 13px !important;
+  font-weight: 500;
+  color: inherit;
+  line-height: 1.4;
+}
+
+.action-popup-item:hover {
+  background-color: #f1f5f9;
+  color: #0c6ad4;
+}
+
+.action-popup-item svg {
+  width: 16px;
+  height: 16px;
+  color: #475569;
+  flex-shrink: 0;
+  transition: color 0.15s ease;
+}
+
+.action-popup-item:hover svg {
+  color: #0c6ad4;
+}
+
+.action-popup-item.item-danger {
+  color: #dc2626;
+}
+
+.action-popup-item.item-danger span {
+  color: #dc2626 !important;
+}
+
+.action-popup-item.item-danger svg {
+  color: #dc2626;
+}
+
+.action-popup-item.item-danger:hover {
+  background-color: #fef2f2;
+  color: #b91c1c;
+}
+
+.action-popup-item.item-danger:hover span,
+.action-popup-item.item-danger:hover svg {
+  color: #b91c1c !important;
+}
+
+.action-popup-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #f1f5f9;
+  margin: 6px 0;
+}
+
+
+
+/* ================= 5. RENAKSI (RB TEMATIK - RENCANA AKSI) PAGE ================= */
+.page-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.page-header-title-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-header-title-box h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--secondary-navy);
+  margin: 0;
+}
+
+.btn-header-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  color: var(--text-gray);
+  border: 1px solid var(--card-border);
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-header-back:hover {
+  background-color: #f1f5f9;
+  color: var(--text-dark);
+  border-color: #94a3b8;
+}
+
+.btn-header-back svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Readonly Summary Info Card (Image 4 Top Card) */
+.rbt-summary-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 28px 36px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rbt-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 24px;
+}
+
+.rbt-summary-grid-3col {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr 1fr;
+  gap: 24px 36px;
+}
+
+.rbt-summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rbt-summary-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.rbt-summary-val {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.4;
+}
+
+/* ================= 6. MODALS STYLING (FIGMA IMAGE 3) ================= */
+.rbt-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(2px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  padding: 20px;
+}
+
+.rbt-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.rbt-modal-dialog {
+  width: 100%;
+  max-width: 680px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transform: translateY(-20px) scale(0.98);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+}
+
+.rbt-modal-overlay.active .rbt-modal-dialog {
+  transform: translateY(0) scale(1);
+}
+
+.rbt-modal-header {
+  background-color: #002b49;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.rbt-modal-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.btn-modal-close {
+  background: none;
+  border: none;
+  color: #cbd5e1;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.btn-modal-close:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.rbt-modal-body {
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.modal-form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.modal-form-label .req {
+  color: #dc2626;
+  margin-left: 2px;
+}
+
+.modal-input,
+.modal-select,
+.modal-textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-family: inherit;
+  color: #0f172a;
+  background-color: #ffffff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.modal-input:focus,
+.modal-select:focus,
+.modal-textarea:focus {
+  outline: none;
+  border-color: #0c6ad4;
+  box-shadow: 0 0 0 3px rgba(12, 106, 212, 0.12);
+}
+
+.modal-input:disabled,
+.modal-input[readonly] {
+  background-color: #f8fafc;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+.modal-textarea {
+  resize: vertical;
+  min-height: 75px;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.grid-4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.rbt-modal-footer {
+  background-color: #f8fafc;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.btn-modal-cancel {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  padding: 7px 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-modal-cancel:hover {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.btn-modal-save {
+  background-color: #0c6ad4;
+  border: none;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  box-shadow: 0 2px 4px rgba(12, 106, 212, 0.2);
+}
+
+.btn-modal-save:hover {
+  background-color: #0952a8;
+}
+
+/* Toast alert notification */
+.rbt-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #002b49;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  z-index: 3000;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.rbt-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= 7. REKAP DATA RB TEMATIK (FIGMA IMAGE 1) ================= */
+.rbt-filter-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rbt-filter-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  width: 100%;
+}
+
+.rbt-filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rbt-filter-col-tahun {
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.rbt-filter-col-tema {
+  flex: 1;
+  min-width: 220px;
+}
+
+.rbt-filter-col-fokus {
+  flex: 1;
+  min-width: 220px;
+}
+
+.rbt-filter-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.rbt-btn-lihat-data {
+  height: 44px;
+  padding: 0 22px;
+  background-color: #0c6ad4;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(12, 106, 212, 0.2);
+}
+
+.rbt-btn-lihat-data:hover {
+  background-color: #0952a8;
+}
+
+.rbt-btn-lihat-data svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* Rekap Data Table Card */
+.rbt-rekap-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rbt-rekap-toolbar {
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.btn-export-excel-clean {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-export-excel-clean:hover {
+  background-color: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.btn-export-excel-clean svg {
+  width: 15px;
+  height: 15px;
+  color: #107c41;
+}
+
+/* Rekap Data Scroll & Table */
+.rbt-rekap-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.rbt-rekap-datatable {
+  width: 100%;
+  min-width: 1350px;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 13px;
+}
+
+.rbt-rekap-datatable thead tr {
+  background-color: #002b49;
+  color: #ffffff;
+}
+
+.rbt-rekap-datatable th {
+  padding: 12px 14px;
+  font-weight: 600;
+  text-align: left;
+  border-right: 1px solid #1c4b72;
+  vertical-align: middle;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.rbt-rekap-datatable th:last-child {
+  border-right: none;
+}
+
+.rbt-rekap-datatable td {
+  padding: 14px;
+  color: #191c1d;
+  border-top: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+  vertical-align: middle;
+  background-color: #ffffff;
+  line-height: 1.4;
+}
+
+.rbt-rekap-datatable td:last-child {
+  border-right: none;
+}
+
+.rbt-rekap-datatable tr:hover td {
+  background-color: #fbfcfe;
+}
+
+.w-rk-no { width: 50px; text-align: center; }
+.w-rk-tema { width: 160px; font-weight: 500; }
+.w-rk-sasaran { width: 170px; }
+.w-rk-ind { width: 160px; color: #475569; }
+.w-rk-target { width: 70px; text-align: center; }
+.w-rk-satuan { width: 85px; text-align: center; }
+.w-rk-realisasi { width: 75px; text-align: center; }
+.w-rk-capaian { width: 85px; text-align: center; }
+.w-rk-catatan { width: 140px; font-size: 12px; color: #475569; }
+.w-rk-evaluator { width: 140px; font-size: 12px; color: #475569; }
+.w-rk-masalah { width: 140px; font-size: 12px; color: #475569; }
+.w-rk-sas-p { width: 140px; font-size: 12px; color: #475569; }
+.w-rk-ind-p { width: 130px; font-size: 12px; color: #475569; }
+.w-rk-tar-p { width: 70px; text-align: center; font-size: 12px; }
+
+/* Status Badges */
+.badge-capaian-blue {
+  background-color: #d5e3ff;
+  color: #001b3c;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+}
+
+.badge-capaian-red {
+  background-color: #ffdad6;
+  color: #ba1a1a;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* ================= TEMA & SASARAN TEMATIK (FIGMA SCREENSHOT 2 & 3) ================= */
+.btn-rbt-blue {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #0c6ad4;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #0c6ad4;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(12, 106, 212, 0.2);
+  font-family: inherit;
+}
+
+.btn-rbt-blue:hover {
+  background-color: #0952a8;
+  border-color: #0952a8;
+}
+
+.btn-rbt-blue svg {
+  width: 15px;
+  height: 15px;
+}
+
+.btn-dashed-add-roadmap {
+  width: 100%;
+  border: 1.5px dashed #0c6ad4;
+  background-color: transparent;
+  color: #0c6ad4;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: inherit;
+}
+
+.btn-dashed-add-roadmap:hover {
+  background-color: #f0f7ff;
+}
+
+.rbt-modal-dialog-roadmap {
+  width: 100%;
+  max-width: 660px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  animation: modalSlideDown 0.25s ease-out;
+}
+
+.form-grid-roadmap {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-row-roadmap {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.form-label-roadmap {
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.form-input-roadmap {
+  width: 100%;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: inherit;
+  color: #1e293b;
+  transition: border-color 0.2s ease;
+}
+
+.form-input-roadmap:focus {
+  outline: none;
+  border-color: #0c6ad4;
+}
+
+.rbt-table-dropdown-container {
+  min-height: 420px;
+  overflow: visible !important;
+}
+
+
+.th-sortable {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.th-sort-icon {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+.rbt-general-data-table td.cell-aksi {
+  position: relative;
+  text-align: center;
+  width: 60px;
+}
+
+.action-popup-menu-right {
+  right: 0;
+  left: auto;
+}
+
+/* ================= 7. FIGMA PHOTO 2 & 3 ENHANCEMENTS ================= */
+
+/* Target Quarter Stack in Rencana Aksi Table */
+.target-quarter-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 12px;
+  color: #1e293b;
+  min-width: 80px;
+}
+
+.target-quarter-stack .target-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.target-quarter-stack .total-bold {
+  font-weight: 700;
+  margin-top: 4px;
+  border-top: 1px dashed #cbd5e1;
+  padding-top: 3px;
+  color: #0f172a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Toolbar Export Buttons (Photo 2) */
+.btn-toolbar-subtle svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+/* Pagination Nav Buttons (Photo 2) */
+.btn-page-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  font-size: 12.5px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-page-nav:hover:not(.disabled):not(.active) {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.btn-page-nav.active {
+  background-color: #002b49;
+  border-color: #002b49;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: default;
+}
+
+.btn-page-nav.disabled {
+  color: #94a3b8;
+  border-color: #e2e8f0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* ================= FIGMA PHOTO 3: TAMBAH PERMASALAHAN MODAL TABLE ================= */
+.rbt-modal-dialog-figma {
+  width: 100%;
+  max-width: 660px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.rbt-modal-header-navy {
+  background-color: #002b49;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rbt-modal-header-navy .rbt-modal-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.rbt-modal-header-navy .btn-modal-close {
+  color: #ffffff;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 4px;
+  opacity: 0.9;
+  transition: opacity 0.15s;
+}
+
+.rbt-modal-header-navy .btn-modal-close:hover {
+  opacity: 1;
+}
+
+.rbt-modal-body-figma {
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+.figma-modal-table {
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.figma-modal-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.figma-modal-row.figma-row-textarea {
+  align-items: stretch;
+}
+
+.figma-modal-row.border-none,
+.figma-modal-row:last-child {
+  border-bottom: none;
+}
+
+.figma-modal-label {
+  width: 195px;
+  flex-shrink: 0;
+  padding: 14px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  border-right: 1px solid #e2e8f0;
+  background-color: #ffffff;
+}
+
+.figma-row-textarea .figma-modal-label {
+  padding-top: 16px;
+}
+
+.figma-modal-control {
+  flex-grow: 1;
+  padding: 10px 16px;
+  background-color: #ffffff;
+}
+
+.select-figma-modal {
+  width: 100%;
+  height: 38px;
+  background-color: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 6px !important;
+  font-size: 13px !important;
+  color: #334155 !important;
+  padding: 0 32px 0 12px !important;
+}
+
+.input-figma-modal {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 0 12px;
+  font-size: 13px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.input-figma-modal.readonly-box {
+  background-color: #f1f5f9;
+  color: #475569;
+  cursor: default;
+}
+
+.textarea-figma-modal {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 13px;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 85px;
+  background-color: #f8fafc;
+  box-sizing: border-box;
+  color: #1e293b;
+}
+
+.textarea-figma-modal:focus,
+.input-figma-modal:focus,
+.select-figma-modal:focus {
+  outline: none;
+  border-color: #0c6ad4 !important;
+  background-color: #ffffff;
+}
+
+.figma-modal-footer {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+}
+
+.btn-figma-cancel {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-figma-cancel:hover {
+  background-color: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.btn-figma-simpan {
+  background-color: #0c6ad4;
+  border: none;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 26px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-figma-simpan:hover {
+  background-color: #0952a8;
+}
+
+
+

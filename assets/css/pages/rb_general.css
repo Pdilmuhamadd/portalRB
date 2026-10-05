@@ -1,0 +1,387 @@
+/* assets/css/pages/rb_general.css */
+/* Styles for RB General (Perencanaan dan Monev) */
+
+/* Filter Card */
+.rbg-filter-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rbg-filter-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  width: 100%;
+}
+
+.rbg-filter-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rbg-filter-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.rbg-btn-lihat-data {
+  height: 44px;
+  padding: 0 24px;
+  background-color: #0c6ad4;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(12, 106, 212, 0.2);
+}
+
+.rbg-btn-lihat-data:hover {
+  background-color: #0952a8;
+}
+
+/* Table Toolbar Buttons */
+.btn-export-subtle-pdf,
+.btn-export-subtle-excel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-export-subtle-pdf:hover,
+.btn-export-subtle-excel:hover {
+  background-color: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.btn-export-subtle-pdf svg {
+  width: 15px;
+  height: 15px;
+  color: #dc2626;
+}
+
+.btn-export-subtle-excel svg {
+  width: 15px;
+  height: 15px;
+  color: #107c41;
+}
+
+/* Datatable RB General */
+.rbg-table-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 32px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rbg-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.rbg-data-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 13px;
+}
+
+.rbg-data-table thead tr {
+  background-color: #002b49;
+  color: #ffffff;
+}
+
+.rbg-data-table th {
+  padding: 14px 12px;
+  font-weight: 600;
+  text-align: left;
+  border-right: 1px solid #1c4b72;
+  vertical-align: middle;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.rbg-data-table th:last-child {
+  border-right: none;
+}
+
+.rbg-data-table td {
+  padding: 14px 12px;
+  color: #191c1d;
+  border-top: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+  vertical-align: top;
+  line-height: 1.4;
+  background-color: #ffffff;
+}
+
+.rbg-data-table td:last-child {
+  border-right: none;
+}
+
+.rbg-data-table tr:hover td {
+  background-color: #fbfcfe;
+}
+
+/* Column Widths */
+.w-rbg-no { width: 45px; text-align: center; }
+.w-rbg-kegiatan { width: 220px; font-weight: 600; }
+.w-rbg-indikator { width: 200px; color: #475569; }
+.w-rbg-baseline { width: 110px; }
+.w-rbg-target { width: 110px; }
+.w-rbg-keterangan { width: 150px; font-size: 12px; color: #64748b; }
+.w-rbg-aksi { width: 175px; text-align: center; }
+
+/* Stacks */
+.rbg-info-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 13px;
+}
+
+.rbg-info-stack.keterangan-stack {
+  font-size: 12px;
+  color: #64748b;
+  gap: 2px;
+}
+
+/* 2x2 Action Button Grid (Figma) */
+.rbg-action-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 74px);
+  gap: 6px;
+  justify-content: center;
+}
+
+.btn-action-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 28px;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.btn-action-badge svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+/* Renaksi: Light Blue */
+.badge-renaksi {
+  background-color: #e0f2fe;
+  color: #0284c7;
+  border-color: #bae6fd;
+}
+.badge-renaksi:hover {
+  background-color: #bae6fd;
+  color: #0369a1;
+}
+
+/* Monev: Light Green */
+.badge-monev {
+  background-color: #dcfce7;
+  color: #16a34a;
+  border-color: #bbf7d0;
+}
+.badge-monev:hover {
+  background-color: #bbf7d0;
+  color: #15803d;
+}
+
+/* Ubah: Light Yellow / Orange */
+.badge-ubah {
+  background-color: #fef9c3;
+  color: #ca8a04;
+  border-color: #fde047;
+}
+.badge-ubah:hover {
+  background-color: #fef08a;
+  color: #a16207;
+}
+
+/* Hapus: Light Pink / Red */
+.badge-hapus {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border-color: #fecaca;
+}
+.badge-hapus:hover {
+  background-color: #fecaca;
+  color: #b91c1c;
+}
+
+/* Modal: Ubah Data Baseline & Target */
+.modal-summary-box {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-summary-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.modal-summary-val {
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.4;
+}
+
+.modal-col-heading {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.modal-section-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ================= REKAP DATA (RB GENERAL) ================= */
+.rbg-rekap-container {
+  width: 100%;
+}
+
+.rbg-rekap-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d0d7de;
+  border-radius: 4px;
+  font-size: 13px;
+  background-color: #ffffff;
+}
+
+.rbg-rekap-table thead tr {
+  background-color: #002b49;
+  color: #ffffff;
+}
+
+.rbg-rekap-table th {
+  padding: 14px 12px;
+  font-weight: 600;
+  text-align: left;
+  border-right: 1px solid #1c4b72;
+  border-bottom: none;
+  vertical-align: middle;
+  line-height: 1.3;
+}
+
+.rbg-rekap-table th:last-child {
+  border-right: none;
+}
+
+.rbg-rekap-table td {
+  padding: 14px 12px;
+  color: #191c1d;
+  border-top: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+  vertical-align: top;
+  line-height: 1.4;
+  background-color: #ffffff;
+}
+
+.rbg-rekap-table td:last-child {
+  border-right: none;
+}
+
+.rbg-rekap-table tr:hover td {
+  background-color: #fbfcfe;
+}
+
+.w-rk-no { width: 50px; text-align: center; }
+.w-rk-instansi { width: 190px; }
+.w-rk-kegiatan { width: 230px; }
+.w-rk-indikator { width: 210px; }
+.w-rk-baseline { width: 140px; }
+.w-rk-tahun-target { width: 95px; text-align: center; }
+.w-rk-realisasi-ind { width: 85px; text-align: center; }
+.w-rk-capaian-ind { width: 85px; text-align: center; }
+.w-rk-catatan { width: 160px; }
+
+.baseline-info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 13px;
+}
+
+.baseline-line {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.baseline-label {
+  color: #64748b;
+  min-width: 62px;
+}
+
+.baseline-val {
+  color: #0f172a;
+}
+
+.target-badge-up {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.catatan-cell {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.4;
+}
+
+.catatan-cell.catatan-muted {
+  color: #94a3b8;
+}
+

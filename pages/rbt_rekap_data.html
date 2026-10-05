@@ -14,16 +14,19 @@
 <body>
   <div class="portal-RB">
     
-    <!-- HEADER / NAVBAR -->
+    <!-- NAVBAR -->
     <header class="header">
       <div class="nav-container">
-        <img class="logo-main" src="../assets/img/logo-portal-rb.png" alt="Logo Portal RB" />
+        <a href="../index.html">
+          <img class="logo-main" src="../assets/img/logo-portal-rb.png" alt="Logo Portal RB" />
+        </a>
         
         <nav class="nav-menu">
           <a href="../index.html" class="nav-link">Beranda</a>
           <a href="dokumen.html" class="nav-link">Dokumen</a>
 
-          <div class="dropdown-container active">
+          <!-- Rencana Aksi -->
+          <div class="dropdown-container">
             <div class="dropdown-trigger">
               <span class="nav-link active">Rencana Aksi</span>
               <span class="chevron-icon">▼</span>
@@ -40,14 +43,14 @@
                         <div class="icon-box"><img class="card-icon" src="../assets/img/icon-perencanaan.png" alt="Icon" /></div>
                         <div class="card-text">
                           <span class="card-title">Perencanaan dan Monev</span>
-                          <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                          <span class="card-desc">Perencanaan dan evaluasi berkala pelaksanaan RB General</span>
                         </div>
                       </a>
                       <a href="rbg_rekap_data.html" class="menu-card">
                         <div class="icon-box"><img class="card-icon" src="../assets/img/icon-rekap.png" alt="Icon" /></div>
                         <div class="card-text">
                           <span class="card-title">Rekap Data</span>
-                          <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                          <span class="card-desc">Rekapitulasi capaian dan data evaluasi RB General</span>
                         </div>
                       </a>
                     </div>
@@ -60,21 +63,21 @@
                         <div class="icon-box"><img class="card-icon" src="../assets/img/icon-tema.png" alt="Icon" /></div>
                         <div class="card-text">
                           <span class="card-title">Tema dan Sasaran Tematik</span>
-                          <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                          <span class="card-desc">Pengaturan tema prioritas dan penetapan sasaran roadmap</span>
                         </div>
                       </a>
                       <a href="rbt_permasalahan_dan_rencana_aksi.html" class="menu-card">
                         <div class="icon-box"><img class="card-icon" src="../assets/img/icon-permasalahan.png" alt="Icon" /></div>
                         <div class="card-text">
                           <span class="card-title">Permasalahan dan Rencana Aksi</span>
-                          <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                          <span class="card-desc">Identifikasi bottleneck masalah dan penyusunan rencana aksi</span>
                         </div>
                       </a>
                       <a href="rbt_rekap_data.html" class="menu-card">
                         <div class="icon-box"><img class="card-icon" src="../assets/img/icon-rekap.png" alt="Icon" /></div>
                         <div class="card-text">
                           <span class="card-title">Rekap Data</span>
-                          <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                          <span class="card-desc">Monitoring menyeluruh capaian RB Tematik</span>
                         </div>
                       </a>
                     </div>
@@ -84,6 +87,7 @@
             </div>
           </div>
 
+          <!-- Evaluasi -->
           <div class="dropdown-container">
             <div class="dropdown-trigger">
               <span class="nav-link">Evaluasi</span>
@@ -98,14 +102,14 @@
                     <div class="icon-box"><img class="card-icon" src="../assets/img/icon-hasil-evaluasi.png" alt="Icon" /></div>
                     <div class="card-text">
                       <span class="card-title">Hasil Evaluasi</span>
-                      <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                      <span class="card-desc">Ringkasan evaluasi dan indeks reformasi birokrasi tahun berjalan</span>
                     </div>
                   </a>
                   <a href="#" class="menu-card">
                     <div class="icon-box"><img class="card-icon" src="../assets/img/icon-evaluasi-2023.png" alt="Icon" /></div>
                     <div class="card-text">
                       <span class="card-title">Hasil Evaluasi 2023</span>
-                      <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                      <span class="card-desc">Laporan dan arsip hasil evaluasi periode sebelumnya</span>
                     </div>
                   </a>
                 </div>
@@ -113,6 +117,7 @@
             </div>
           </div>
 
+          <!-- Pelaporan LHKAN -->
           <div class="dropdown-container">
             <div class="dropdown-trigger">
               <span class="nav-link">Pelaporan LHKAN</span>
@@ -127,14 +132,14 @@
                     <div class="icon-box"><img class="card-icon" src="../assets/img/icon-coi.png" alt="Icon" /></div>
                     <div class="card-text">
                       <span class="card-title">Form Input</span>
-                      <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                      <span class="card-desc">Formulir pengisian kepatuhan pelaporan LHKAN</span>
                     </div>
                   </a>
                   <a href="riwayat_pelaporan.html" class="menu-card">
                     <div class="icon-box"><img class="card-icon" src="../assets/img/icon-lkhan.png" alt="Icon" /></div>
                     <div class="card-text">
                       <span class="card-title">Riwayat Pelaporan</span>
-                      <span class="card-desc">Lorem Ipsum is simply dummy text of the printing and</span>
+                      <span class="card-desc">Log data pelaporan dan rekapitulasi kepatuhan</span>
                     </div>
                   </a>
                 </div>
@@ -150,8 +155,9 @@
       </div>
     </header>
 
+    <!-- BREADCRUMB BAR -->
     <div class="breadcrumb-bar">
-      <div class="page-container-rekap">
+      <div class="page-container-wide">
         <div class="breadcrumb-content">
           <svg class="icon-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -170,16 +176,17 @@
 
     <!-- MAIN CONTENT AREA -->
     <main class="page-main-content">
-      <div class="page-container-rekap">
+      <div class="page-container-wide">
         
-        <!-- SECTION 1: FILTER CARD (Tahun, Tema, Fokus Intervensi) -->
-        <div class="filter-card-container width-full">
-          <div class="filter-row-three-cols">
+        <!-- SECTION 1: FILTER CARD HORIZONTAL (FIGMA IMAGE 1) -->
+        <div class="rbt-filter-card">
+          <div class="rbt-filter-row">
             
-            <div class="filter-field">
-              <label class="filter-label-xs">Tahun</label>
+            <!-- Tahun -->
+            <div class="rbt-filter-field rbt-filter-col-tahun">
+              <label class="rbt-filter-label">Tahun</label>
               <div class="select-container">
-                <select class="custom-select select-bg-light">
+                <select class="custom-select select-bg-light" id="rekapFilterTahun">
                   <option value="2026" selected>2026</option>
                   <option value="2025">2025</option>
                   <option value="2024">2024</option>
@@ -190,13 +197,15 @@
               </div>
             </div>
 
-            <div class="filter-field">
-              <label class="filter-label-xs">Tema</label>
+            <!-- Tema -->
+            <div class="rbt-filter-field rbt-filter-col-tema">
+              <label class="rbt-filter-label">Tema</label>
               <div class="select-container">
-                <select class="custom-select select-bg-light">
+                <select class="custom-select select-bg-light" id="rekapFilterTema">
                   <option value="all" selected>Semua Tema</option>
-                  <option value="1">Pengentasan Kemiskinan Ekstrem</option>
-                  <option value="2">Peningkatan Investasi</option>
+                  <option value="Pengentasan Kemiskinan Ekstrem">Pengentasan Kemiskinan Ekstrem</option>
+                  <option value="Peningkatan Investasi">Peningkatan Investasi</option>
+                  <option value="Digitalisasi Administrasi Pemerintahan">Digitalisasi Administrasi Pemerintahan</option>
                 </select>
                 <div class="select-arrow">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -204,11 +213,15 @@
               </div>
             </div>
 
-            <div class="filter-field">
-              <label class="filter-label-xs">Fokus Intervensi</label>
+            <!-- Fokus Intervensi -->
+            <div class="rbt-filter-field rbt-filter-col-fokus">
+              <label class="rbt-filter-label">Fokus Intervensi</label>
               <div class="select-container">
-                <select class="custom-select select-bg-light">
+                <select class="custom-select select-bg-light" id="rekapFilterFokus">
                   <option value="all" selected>Semua Fokus</option>
+                  <option value="Sumber Daya Manusia">Sumber Daya Manusia</option>
+                  <option value="Infrastruktur dan Sarana">Infrastruktur dan Sarana</option>
+                  <option value="Tata Kelola dan Regulasi">Tata Kelola dan Regulasi</option>
                 </select>
                 <div class="select-arrow">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -216,8 +229,9 @@
               </div>
             </div>
 
-            <button class="btn-primary-blue btn-rekap-filter">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-search-btn">
+            <!-- Tombol Lihat Data -->
+            <button type="button" class="rbt-btn-lihat-data" id="btnLihatData">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                 <circle cx="11" cy="11" r="8"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
               </svg>
@@ -227,117 +241,105 @@
           </div>
         </div>
 
-        <!-- SECTION 2: DATATABLE REKAP DATA RB TEMATIK -->
-        <div class="rbt-rekap-table-card">
+        <!-- SECTION 2: DATATABLE REKAP DATA RB TEMATIK (FIGMA IMAGE 1) -->
+        <div class="rbt-rekap-card">
+          <!-- Toolbar -->
           <div class="rbt-rekap-toolbar">
             <div class="export-buttons">
-              <button class="btn-export-excel-subtle">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="icon-excel-subtle">
+              <button type="button" class="btn-export-excel-clean" onclick="alert('Mengekspor Rekap Data ke Excel...')">
+                <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm1.8 18H14l-2-3.4-2 3.4H8.2l2.9-4.5L8.3 9h1.9l1.8 3.2L13.8 9h1.9l-2.8 4.4 2.9 4.6z"/>
                 </svg>
                 <span>Excel</span>
               </button>
             </div>
 
-            <div class="datatable-controls">
-              <div class="entries-control">
+            <div class="rbt-toolbar-controls">
+              <div class="rbt-entries-control">
                 <span>Show</span>
-                <div class="select-container select-sm">
-                  <select class="custom-select select-compact">
+                <div class="select-container">
+                  <select class="custom-select select-compact-sm">
                     <option value="10" selected>10</option>
                     <option value="25">25</option>
                     <option value="50">50</option>
                   </select>
-                  <div class="select-arrow">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                  </div>
                 </div>
                 <span>entries</span>
               </div>
 
-              <div class="search-control">
-                <label for="tableSearch">Search:</label>
-                <input type="text" id="tableSearch" class="search-input" />
+              <div class="rbt-search-control">
+                <label for="tableSearchRekap">Search:</label>
+                <input type="text" id="tableSearchRekap" class="input-search-rbt" placeholder="Cari rekap data..." />
               </div>
             </div>
           </div>
 
-          <div class="rbt-rekap-scroll-wrapper">
-            <table class="rbt-rekap-table">
+          <!-- Table Container with Horizontal Scroll -->
+          <div class="rbt-rekap-scroll">
+            <table class="rbt-rekap-datatable" id="rekapDataTable">
               <thead>
                 <tr>
-                  <th class="col-center w-rbt-rk-no">No.</th>
-                  <th class="w-rbt-rk-tema">Tema</th>
-                  <th class="w-rbt-rk-sasaran">Sasaran</th>
-                  <th class="w-rbt-rk-indikator">Indikator</th>
-                  <th class="col-right w-rbt-rk-target">Target</th>
-                  <th class="w-rbt-rk-satuan">Satuan Target</th>
-                  <th class="col-right w-rbt-rk-realisasi">Realisasi</th>
-                  <th class="col-center w-rbt-rk-capaian">Capaian</th>
-                  <th class="w-rbt-rk-catatan">Catatan</th>
-                  <th class="w-rbt-rk-evaluator">Catatan Evaluator</th>
-                  <th class="w-rbt-rk-permasalahan">Permasalahan</th>
-                  <th class="w-rbt-rk-sas-p">Sasaran</th>
-                  <th class="w-rbt-rk-ind-p">Indikator</th>
-                  <th class="w-rbt-rk-tar-p">Target</th>
-                  <th class="w-rbt-rk-sat-p">Satuan</th>
-                  <th class="col-right w-rbt-rk-rea-p">Realisasi</th>
-                  <th class="w-rbt-rk-cap-p">Capaian</th>
-                  <th class="w-rbt-rk-cat-p">Catatan</th>
+                  <th class="w-rk-no">No.</th>
+                  <th class="w-rk-tema">Tema</th>
+                  <th class="w-rk-sasaran">Sasaran</th>
+                  <th class="w-rk-ind">Indikator</th>
+                  <th class="w-rk-target">Target</th>
+                  <th class="w-rk-satuan">Satuan Target</th>
+                  <th class="w-rk-realisasi">Realisasi</th>
+                  <th class="w-rk-capaian">Capaian</th>
+                  <th class="w-rk-catatan">Catatan</th>
+                  <th class="w-rk-evaluator">Catatan Evaluator</th>
+                  <th class="w-rk-masalah">Permasalahan</th>
+                  <th class="w-rk-sas-p">Sasaran</th>
+                  <th class="w-rk-ind-p">Indikator</th>
+                  <th class="w-rk-tar-p">Target</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="rekapTableBody">
                 <tr>
-                  <td class="col-center text-muted">1</td>
-                  <td>Pengentasan Kemiskinan Ekstrem</td>
-                  <td>Menurunnya tingkat kemiskinan</td>
-                  <td>Persentase penduduk miskin</td>
-                  <td class="col-right">8.5</td>
-                  <td>%</td>
-                  <td class="col-right">8.1</td>
-                  <td class="col-center">
+                  <td class="w-rk-no font-semibold">1</td>
+                  <td class="w-rk-tema">Pengentasan Kemiskinan Ekstrem</td>
+                  <td class="w-rk-sasaran">Menurunnya tingkat kemiskinan</td>
+                  <td class="w-rk-ind">Persentase penduduk miskin</td>
+                  <td class="w-rk-target">8.5</td>
+                  <td class="w-rk-satuan">%</td>
+                  <td class="w-rk-realisasi">8.1</td>
+                  <td class="w-rk-capaian">
                     <span class="badge-capaian-blue">104.9%</span>
                   </td>
-                  <td class="text-muted">Target terlampaui</td>
-                  <td class="text-muted">-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td class="col-right">-</td>
-                  <td>-</td>
-                  <td class="col-right">-</td>
-                  <td class="col-center">-</td>
-                  <td class="text-muted">-</td>
+                  <td class="w-rk-catatan">Target terlampaui</td>
+                  <td class="w-rk-evaluator">-</td>
+                  <td class="w-rk-masalah">-</td>
+                  <td class="w-rk-sas-p">-</td>
+                  <td class="w-rk-ind-p">-</td>
+                  <td class="w-rk-tar-p">-</td>
                 </tr>
 
                 <tr>
-                  <td class="col-center text-muted">2</td>
-                  <td>Peningkatan Investasi</td>
-                  <td>Meningkatnya nilai investasi daerah</td>
-                  <td>Jumlah investasi masuk</td>
-                  <td class="col-right">500</td>
-                  <td>%</td>
-                  <td class="col-right">450</td>
-                  <td class="col-center">
+                  <td class="w-rk-no font-semibold">2</td>
+                  <td class="w-rk-tema">Peningkatan Investasi</td>
+                  <td class="w-rk-sasaran">Meningkatnya nilai investasi daerah</td>
+                  <td class="w-rk-ind">Jumlah investasi masuk</td>
+                  <td class="w-rk-target">500</td>
+                  <td class="w-rk-satuan">%</td>
+                  <td class="w-rk-realisasi">450</td>
+                  <td class="w-rk-capaian">
                     <span class="badge-capaian-red">90%</span>
                   </td>
-                  <td class="text-muted">Belum mencapai target</td>
-                  <td class="text-muted">Perlu percepatan perizinan</td>
-                  <td>Proses perizinan lambat</td>
-                  <td>Mempercepat SLA perizinan</td>
-                  <td>Rata-rata waktu izin</td>
-                  <td class="col-right">5</td>
-                  <td>Hari</td>
-                  <td class="col-right">7</td>
-                  <td class="col-center">71%</td>
-                  <td class="text-muted">Sistem OSS sering gangguan</td>
+                  <td class="w-rk-catatan">Belum mencapai target</td>
+                  <td class="w-rk-evaluator">Perlu percepatan perizinan</td>
+                  <td class="w-rk-masalah">Proses perizinan lambat</td>
+                  <td class="w-rk-sas-p">Mempercepat SLA perizinan</td>
+                  <td class="w-rk-ind-p">-</td>
+                  <td class="w-rk-tar-p">-</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
+          <!-- Table Footer Pagination -->
           <div class="rekap-table-footer">
-            <span class="entries-info">Showing 1 to 2 of 2 entries</span>
+            <span class="entries-info" id="rekapEntriesInfo">Showing 1 to 2 of 2 entries</span>
             <div class="pagination-nav">
               <button class="btn-page disabled" aria-label="Previous">&lt;</button>
               <button class="btn-page active">1</button>
@@ -351,7 +353,8 @@
 
   </div>
 
-  <!-- JAVASCRIPT UTAMA TERPUSAT -->
+  <!-- JAVASCRIPT UTAMA TERPUSAT & MODUL RB TEMATIK -->
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/pages/rb_tematik.js"></script>
 </body>
 </html>

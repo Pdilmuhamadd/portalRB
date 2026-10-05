@@ -84,7 +84,7 @@
             </div>
           </div>
 
-          <div class="dropdown-container active">
+          <div class="dropdown-container">
             <div class="dropdown-trigger">
               <span class="nav-link active">Evaluasi</span>
               <span class="chevron-icon">▼</span>
@@ -201,262 +201,346 @@
 
         <!-- SECTION 3: TAB NAVIGATION -->
         <div class="eval-tabs-bar">
-          <button class="eval-tab-item active">Overview</button>
-          <button class="eval-tab-item">Kertas Kerja</button>
+          <button type="button" class="eval-tab-item active" id="tabBtnOverview" data-tab="overview">Overview</button>
+          <button type="button" class="eval-tab-item" id="tabBtnKertasKerja" data-tab="kertas-kerja">Kertas Kerja</button>
         </div>
 
-        <!-- SECTION 4: RB GENERAL CARD -->
-        <div class="eval-section-container">
-          <h2 class="eval-section-heading">RB General</h2>
+        <!-- ================= TAB PANE 1: OVERVIEW ================= -->
+        <div class="eval-tab-pane active" id="paneOverview">
           
-          <div class="eval-cards-row">
-            <div class="eval-metrics-card">
-              <h3 class="metrics-card-title">Strategi Pelaksanaan RB General</h3>
-              <div class="metrics-details-stack">
-                <div class="metric-row">
-                  <span class="metric-label">Total Score Index</span>
-                  <span class="metric-value">8,50</span>
-                </div>
-                <div class="metric-row">
-                  <span class="metric-label">Total Bobot</span>
-                  <span class="metric-value">10,00</span>
-                </div>
-                <div class="metric-row metric-total">
-                  <span class="metric-total-label">Persentase</span>
-                  <span class="metric-total-value">85,00%</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="eval-metrics-card">
-              <h3 class="metrics-card-title">Capaian Sasaran Strategis Reformasi Birokrasi</h3>
-              <div class="metrics-details-stack">
-                <div class="metric-row">
-                  <span class="metric-label">Total Score Index</span>
-                  <span class="metric-value">37,54</span>
-                </div>
-                <div class="metric-row">
-                  <span class="metric-label">Total Bobot</span>
-                  <span class="metric-value">50,00</span>
-                </div>
-                <div class="metric-row metric-total">
-                  <span class="metric-total-label">Persentase</span>
-                  <span class="metric-total-value">75,08%</span>
+          <!-- SECTION 4: RB GENERAL -->
+          <div class="eval-section-container">
+            <h2 class="eval-section-heading">RB General</h2>
+            
+            <div class="eval-cards-grid-3">
+              <div class="eval-metrics-card">
+                <h3 class="metrics-card-title">Strategi Pelaksanaan RB General</h3>
+                <div class="metrics-details-stack">
+                  <div class="metric-row">
+                    <span class="metric-label">Total Score Index</span>
+                    <span class="metric-value">8,50</span>
+                  </div>
+                  <div class="metric-row">
+                    <span class="metric-label">Total Bobot</span>
+                    <span class="metric-value">10,00</span>
+                  </div>
+                  <div class="metric-row metric-total">
+                    <span class="metric-total-label">Persentase</span>
+                    <span class="metric-total-value">85,00%</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="eval-metrics-card">
-              <h3 class="metrics-card-title">Capaian Pelaksanaan Kebijakan Reformasi Birokrasi</h3>
-              <div class="metrics-details-stack">
-                <div class="metric-row">
-                  <span class="metric-label">Total Score Index</span>
-                  <span class="metric-value">26,39</span>
+              <div class="eval-metrics-card">
+                <h3 class="metrics-card-title">Capaian Sasaran Strategis Reformasi Birokrasi</h3>
+                <div class="metrics-details-stack">
+                  <div class="metric-row">
+                    <span class="metric-label">Total Score Index</span>
+                    <span class="metric-value">37,54</span>
+                  </div>
+                  <div class="metric-row">
+                    <span class="metric-label">Total Bobot</span>
+                    <span class="metric-value">50,00</span>
+                  </div>
+                  <div class="metric-row metric-total">
+                    <span class="metric-total-label">Persentase</span>
+                    <span class="metric-total-value">75,08%</span>
+                  </div>
                 </div>
-                <div class="metric-row">
-                  <span class="metric-label">Total Bobot</span>
-                  <span class="metric-value">40,00</span>
-                </div>
-                <div class="metric-row metric-total">
-                  <span class="metric-total-label">Persentase</span>
-                  <span class="metric-total-value">65,98%</span>
+              </div>
+
+              <div class="eval-metrics-card">
+                <h3 class="metrics-card-title">Capaian Pelaksanaan Kebijakan Reformasi Birokrasi</h3>
+                <div class="metrics-details-stack">
+                  <div class="metric-row">
+                    <span class="metric-label">Total Score Index</span>
+                    <span class="metric-value">26,39</span>
+                  </div>
+                  <div class="metric-row">
+                    <span class="metric-label">Total Bobot</span>
+                    <span class="metric-value">40,00</span>
+                  </div>
+                  <div class="metric-row metric-total">
+                    <span class="metric-total-label">Persentase</span>
+                    <span class="metric-total-value">65,98%</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- SECTION 5: RB TEMATIK CARD -->
-        <div class="eval-section-container">
-          <h2 class="eval-section-heading">RB Tematik</h2>
-          
-          <div class="eval-cards-row">
-
-            <div class="eval-metrics-card">
-              <h3 class="metrics-card-title">Strategi Pembangunan</h3>
-              <div class="metrics-details-stack">
-                <div class="metric-row">
-                  <span class="metric-label">Total Score Index</span>
-                  <span class="metric-value">2,32</span>
-                </div>
-                <div class="metric-row">
-                  <span class="metric-label">Total Bobot</span>
-                  <span class="metric-value">5,00</span>
-                </div>
-                <div class="metric-row metric-total">
-                  <span class="metric-total-label">Persentase</span>
-                  <span class="metric-total-value">46,40%</span>
+          <!-- SECTION 5: RB TEMATIK -->
+          <div class="eval-section-container">
+            <h2 class="eval-section-heading">RB Tematik</h2>
+            
+            <div class="eval-cards-grid-3">
+              <div class="eval-metrics-card">
+                <h3 class="metrics-card-title">Strategi Pembangunan</h3>
+                <div class="metrics-details-stack">
+                  <div class="metric-row">
+                    <span class="metric-label">Total Score Index</span>
+                    <span class="metric-value">2,32</span>
+                  </div>
+                  <div class="metric-row">
+                    <span class="metric-label">Total Bobot</span>
+                    <span class="metric-value">5,00</span>
+                  </div>
+                  <div class="metric-row metric-total">
+                    <span class="metric-total-label">Persentase</span>
+                    <span class="metric-total-value">46,40%</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="eval-metrics-card">
-              <h3 class="metrics-card-title">Capaian Indikator Dampak</h3>
-              <div class="metrics-details-stack">
-                <div class="metric-row">
-                  <span class="metric-label">Total Score Index</span>
-                  <span class="metric-value">6,39</span>
-                </div>
-                <div class="metric-row">
-                  <span class="metric-label">Total Bobot</span>
-                  <span class="metric-value">15,00</span>
-                </div>
-                <div class="metric-row metric-total">
-                  <span class="metric-total-label">Persentase</span>
-                  <span class="metric-total-value">42,60%</span>
+              <div class="eval-metrics-card">
+                <h3 class="metrics-card-title">Capaian Indikator Dampak</h3>
+                <div class="metrics-details-stack">
+                  <div class="metric-row">
+                    <span class="metric-label">Total Score Index</span>
+                    <span class="metric-value">6,39</span>
+                  </div>
+                  <div class="metric-row">
+                    <span class="metric-label">Total Bobot</span>
+                    <span class="metric-value">15,00</span>
+                  </div>
+                  <div class="metric-row metric-total">
+                    <span class="metric-total-label">Persentase</span>
+                    <span class="metric-total-value">42,60%</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- SECTION 6: PERSENTASE INDIKATOR MENCAPAI TARGET BAIK -->
-        <div class="eval-section-heading-box">
-          <h2 class="eval-section-heading">Persentase Indikator Mencapai Target Baik</h2>
-        </div>
+          <!-- SECTION 6: PERSENTASE INDIKATOR MENCAPAI TARGET BAIK (FIGMA SCREENSHOT 2) -->
+          <div class="eval-target-section">
+            <div class="eval-target-heading-box">
+              <h2 class="eval-section-heading">Persentase Indikator Mencapai Target Baik</h2>
+            </div>
 
-        <div class="eval-gauge-row">
-          
-          <div class="gauge-card">
-            <div class="gauge-card-inner">
+            <div class="eval-target-grid">
               
-              <div class="donut-wrapper">
-                <svg class="donut-svg" viewBox="0 0 160 160">
-                  <circle class="donut-bg" cx="80" cy="80" r="64" />
-                  <circle class="donut-progress donut-progress-85" cx="80" cy="80" r="64" />
-                </svg>
-                <div class="donut-text-content">
-                  <span class="donut-score">85,7%</span>
-                  <span class="donut-label">CAPAIAN</span>
+              <!-- Card 1: Kebijakan Reformasi Birokrasi -->
+              <div class="eval-target-card">
+                <h3 class="target-card-title">Capaian Pelaksanaan Kebijakan Reformasi Birokrasi</h3>
+                <div class="target-card-big-value">85,71%</div>
+                <div class="target-card-substats">
+                  <div>Indikator mencapai target baik: 12</div>
+                  <div>Indikator dengan target baik: 14</div>
+                  <div>Total Indikator: 14</div>
+                </div>
+
+                <!-- 5 Indikator Tertinggi -->
+                <div class="target-ranking-group">
+                  <div class="ranking-group-title">5 INDIKATOR DENGAN CAPAIAN BOBOT TERTINGGI</div>
+                  <div class="ranking-group-divider"></div>
+                  <div class="ranking-list">
+                    <div class="ranking-item">
+                      <span class="ranking-name">Tingkat Capaian Sistem Kerja untuk Penyederhanaan Birokrasi</span>
+                      <span class="ranking-value">100,00%</span>
+                    </div>
+                    <div class="ranking-item">
+                      <span class="ranking-name">Tingkat Digitalisasi Arsip</span>
+                      <span class="ranking-value">93,60%</span>
+                    </div>
+                    <div class="ranking-item">
+                      <span class="ranking-name">Tingkat Kepatuhan Standar Pelayanan Publik</span>
+                      <span class="ranking-value">93,50%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 5 Indikator Terendah -->
+                <div class="target-ranking-group">
+                  <div class="ranking-group-title">5 INDIKATOR DENGAN CAPAIAN BOBOT TERENDAH</div>
+                  <div class="ranking-group-divider"></div>
+                  <div class="ranking-list">
+                    <div class="ranking-item">
+                      <span class="ranking-name">Tingkat Implementasi Kebijakan Arsitektur SPBE</span>
+                      <span class="ranking-value text-danger">0,00%</span>
+                    </div>
+                    <div class="ranking-item">
+                      <span class="ranking-name">Tingkat Keberhasilan Pembangunan ZI</span>
+                      <span class="ranking-value">14,29%</span>
+                    </div>
+                    <div class="ranking-item">
+                      <span class="ranking-name">Indeks Pembangunan Statistik</span>
+                      <span class="ranking-value">58,40%</span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div class="gauge-content">
-                <h3 class="gauge-title">Capaian Pelaksanaan Kebijakan Reformasi Birokrasi</h3>
-                
-                <div class="gauge-targets-box">
-                  <div class="target-item">
-                    <span class="target-label">Target Baik</span>
-                    <span class="target-num">12</span>
-                  </div>
-                  <div class="target-item border-left">
-                    <span class="target-label">Total Target</span>
-                    <span class="target-num">14</span>
-                  </div>
-                  <div class="target-item border-left">
-                    <span class="target-label">Indikator</span>
-                    <span class="target-num">14</span>
-                  </div>
+              <!-- Card 2: Sasaran Strategis Reformasi Birokrasi -->
+              <div class="eval-target-card">
+                <h3 class="target-card-title">Capaian Sasaran Strategis Reformasi Birokrasi</h3>
+                <div class="target-card-big-value">50,00%</div>
+                <div class="target-card-substats">
+                  <div>Indikator mencapai target baik: 3</div>
+                  <div>Indikator dengan target baik: 6</div>
+                  <div>Total Indikator: 8</div>
                 </div>
 
-                <div class="weight-lists-wrapper">
-
-                  <div class="weight-group">
-                    <div class="weight-group-header">
-                      <span class="weight-icon">•</span>
-                      <span class="weight-group-title">5 BOBOT TERTINGGI</span>
+                <!-- 3 Indikator Tertinggi -->
+                <div class="target-ranking-group">
+                  <div class="ranking-group-title">3 INDIKATOR DENGAN CAPAIAN BOBOT TERTINGGI</div>
+                  <div class="ranking-group-divider"></div>
+                  <div class="ranking-list">
+                    <div class="ranking-item">
+                      <span class="ranking-name">Opini BPK</span>
+                      <span class="ranking-value">100,00%</span>
                     </div>
-                    <div class="weight-item">
-                      <span>Tingkat Capaian Sistem Kerja</span>
-                      <span class="weight-val text-navy">100%</span>
+                    <div class="ranking-item">
+                      <span class="ranking-name">Capaian IKU Makro</span>
+                      <span class="ranking-value">97,00%</span>
                     </div>
-                    <div class="weight-item">
-                      <span>Digitalisasi Arsip</span>
-                      <span class="weight-val text-navy">93,6%</span>
-                    </div>
-                  </div>
-
-                  <div class="weight-group">
-                    <div class="weight-group-header">
-                      <span class="weight-icon">•</span>
-                      <span class="weight-group-title">5 BOBOT TERENDAH</span>
-                    </div>
-                    <div class="weight-item">
-                      <span>Kebijakan Arsitektur SPBE</span>
-                      <span class="weight-val text-red">0,0%</span>
-                    </div>
-                    <div class="weight-item">
-                      <span>Pembangunan ZI</span>
-                      <span class="weight-val">14,3%</span>
+                    <div class="ranking-item">
+                      <span class="ranking-name">Survei Kepuasan Masyarakat</span>
+                      <span class="ranking-value">85,50%</span>
                     </div>
                   </div>
                 </div>
 
-              </div>
-
-            </div>
-          </div>
-
-          <div class="gauge-card">
-            <div class="gauge-card-inner">
-              
-              <div class="donut-wrapper">
-                <svg class="donut-svg" viewBox="0 0 160 160">
-                  <circle class="donut-bg" cx="80" cy="80" r="64" />
-                  <circle class="donut-progress donut-progress-50" cx="80" cy="80" r="64" />
-                </svg>
-                <div class="donut-text-content">
-                  <span class="donut-score">50,0%</span>
-                  <span class="donut-label">CAPAIAN</span>
-                </div>
-              </div>
-
-              <div class="gauge-content">
-                <h3 class="gauge-title">Capaian Sasaran Strategis Reformasi Birokrasi</h3>
-                
-                <div class="gauge-targets-box">
-                  <div class="target-item">
-                    <span class="target-label">Target Baik</span>
-                    <span class="target-num">3</span>
-                  </div>
-                  <div class="target-item border-left">
-                    <span class="target-label">Total Target</span>
-                    <span class="target-num">6</span>
-                  </div>
-                  <div class="target-item border-left">
-                    <span class="target-label">Indikator</span>
-                    <span class="target-num">8</span>
-                  </div>
-                </div>
-
-                <div class="weight-lists-wrapper">
-
-                  <div class="weight-group">
-                    <div class="weight-group-header">
-                      <span class="weight-icon">•</span>
-                      <span class="weight-group-title">3 BOBOT TERTINGGI</span>
+                <!-- 3 Indikator Terendah -->
+                <div class="target-ranking-group">
+                  <div class="ranking-group-title">3 INDIKATOR DENGAN CAPAIAN BOBOT TERENDAH</div>
+                  <div class="ranking-group-divider"></div>
+                  <div class="ranking-list">
+                    <div class="ranking-item">
+                      <span class="ranking-name">Capaian IKU Non Makro</span>
+                      <span class="ranking-value">55,00%</span>
                     </div>
-                    <div class="weight-item">
-                      <span>Opini BPK</span>
-                      <span class="weight-val text-navy">100%</span>
+                    <div class="ranking-item">
+                      <span class="ranking-name">Survei Penilaian Integritas</span>
+                      <span class="ranking-value">63,60%</span>
                     </div>
-                    <div class="weight-item">
-                      <span>Capaian IKU Makro</span>
-                      <span class="weight-val text-navy">97,0%</span>
-                    </div>
-                  </div>
-
-                  <div class="weight-group">
-                    <div class="weight-group-header">
-                      <span class="weight-icon">•</span>
-                      <span class="weight-group-title">3 BOBOT TERENDAH</span>
-                    </div>
-                    <div class="weight-item">
-                      <span>Capaian IKU Non Makro</span>
-                      <span class="weight-val">55,0%</span>
-                    </div>
-                    <div class="weight-item">
-                      <span>Survei Penilaian Integritas</span>
-                      <span class="weight-val">63,6%</span>
+                    <div class="ranking-item">
+                      <span class="ranking-name">Indeks BerAkhlak</span>
+                      <span class="ranking-value">69,25%</span>
                     </div>
                   </div>
                 </div>
-
               </div>
 
             </div>
           </div>
 
+        </div>
+
+        <!-- ================= TAB PANE 2: KERTAS KERJA (FIGMA SCREENSHOT 3) ================= -->
+        <div class="eval-tab-pane" id="paneKertasKerja">
+          <div class="kertas-kerja-card">
+            
+            <!-- DATATABLE TOOLBAR (EXPORT, ENTRIES & SEARCH) -->
+            <div class="table-toolbar width-full">
+              <div class="export-buttons">
+                <button type="button" class="btn-export" id="btnKkExportPdf">
+                  <svg class="icon-export icon-pdf-red" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5z"/>
+                  </svg>
+                  <span>Ekspor PDF</span>
+                </button>
+                <button type="button" class="btn-export" id="btnKkExportExcel">
+                  <svg class="icon-export icon-excel-green" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm1.8 18H14l-2-3.4-2 3.4H8.2l2.9-4.5L8.3 9h1.9l1.8 3.2L13.8 9h1.9l-2.8 4.4 2.9 4.6z"/>
+                  </svg>
+                  <span>Ekspor Excel</span>
+                </button>
+              </div>
+
+              <div class="datatable-controls">
+                <div class="entries-control">
+                  <span>Show</span>
+                  <div class="select-container select-sm">
+                    <select class="custom-select select-compact" id="kkSelectEntries">
+                      <option value="10" selected>10</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                    </select>
+                    <div class="select-arrow">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                  </div>
+                  <span>entries</span>
+                </div>
+
+                <div class="search-control">
+                  <label for="kkSearchInput">Search:</label>
+                  <input type="text" id="kkSearchInput" class="search-input" />
+                </div>
+              </div>
+            </div>
+
+            <!-- TABLE KERTAS KERJA -->
+            <div class="table-responsive-kk">
+              <table class="table-kertas-kerja" id="kertasKerjaTable">
+                <thead>
+                  <tr>
+                    <th class="th-sortable col-no">
+                      <div class="th-content"><span>No.</span><span class="sort-arrows">⇅</span></div>
+                    </th>
+                    <th class="th-sortable col-komponen">
+                      <div class="th-content"><span>Komponen</span><span class="sort-arrows">⇅</span></div>
+                    </th>
+                    <th class="th-sortable col-subkomponen">
+                      <div class="th-content"><span>Sub Komponen</span><span class="sort-arrows">⇅</span></div>
+                    </th>
+                    <th class="th-sortable col-indikator">
+                      <div class="th-content"><span>Indikator Penilaian</span><span class="sort-arrows">⇅</span></div>
+                    </th>
+                    <th class="th-sortable col-bobot">
+                      <div class="th-content"><span>Bobot</span><span class="sort-arrows">⇅</span></div>
+                    </th>
+                    <th class="th-sortable col-target">
+                      <div class="th-content"><span>Target Baik</span><span class="sort-arrows">⇅</span></div>
+                    </th>
+                    <th class="th-sortable col-skor">
+                      <div class="th-content"><span>Skor</span><span class="sort-arrows">⇅</span></div>
+                    </th>
+                    <th class="th-sortable col-skor-idx">
+                      <div class="th-content"><span>Skor Index</span><span class="sort-arrows">⇅</span></div>
+                    </th>
+                    <th class="th-sortable col-capaian-idx">
+                      <div class="th-content"><span>Capaian Index (%)</span><span class="sort-arrows">⇅</span></div>
+                    </th>
+                    <th class="th-sortable col-catatan">
+                      <div class="th-content"><span>Catatan</span><span class="sort-arrows">⇅</span></div>
+                    </th>
+                    <th class="th-sortable col-rekomendasi">
+                      <div class="th-content"><span>Rekomendasi</span><span class="sort-arrows">⇅</span></div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody id="kkTableBody">
+                  <!-- Row 1 (Figma Screenshot 3) -->
+                  <tr>
+                    <td class="td-center">1</td>
+                    <td>RB General</td>
+                    <td>Strategi Pelaksanaan RB General</td>
+                    <td>Rencana Aksi Pembangunan RB General</td>
+                    <td class="td-center">3</td>
+                    <td class="td-center"></td>
+                    <td class="td-center">2,55</td>
+                    <td class="td-center">2,55</td>
+                    <td class="td-center">85,00</td>
+                    <td>Target yang ditetapkan telah mempertimbangkan capaian tahun lalu walau kenaikan nya masing sangat kecil. Rencana Aksi telah disahkan. Sebagian besar rencana aksi telah</td>
+                    <td>Menetapkan target atas Kegiatan Utama berdasarkan pada baseline tahun sebelumnya dan target Reformasi Birokrasi nasional</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- FOOTER PAGINATION -->
+            <div class="kk-footer-pagination">
+              <div class="kk-entries-info" id="kkEntriesInfo">Showing 1 to 1 of 1 entries</div>
+              <div class="kk-pagination-buttons">
+                <button type="button" class="btn-kk-page" id="btnKkPrev" disabled>Previous</button>
+                <button type="button" class="btn-kk-page active">1</button>
+                <button type="button" class="btn-kk-page" id="btnKkNext" disabled>Next</button>
+              </div>
+            </div>
+
+          </div>
         </div>
 
       </div>
@@ -466,5 +550,6 @@
 
   <!-- JAVASCRIPT UTAMA TERPUSAT -->
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/pages/evaluasi.js"></script>
 </body>
 </html>

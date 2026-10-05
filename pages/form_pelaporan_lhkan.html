@@ -113,7 +113,7 @@
             </div>
           </div>
 
-          <div class="dropdown-container active">
+          <div class="dropdown-container">
             <div class="dropdown-trigger">
               <span class="nav-link active">Pelaporan LHKAN</span>
               <span class="chevron-icon">▼</span>
@@ -159,9 +159,9 @@
           </svg>
           <a href="../index.html" class="breadcrumb-link">Beranda</a>
           <span class="breadcrumb-separator">&gt;</span>
-          <span class="breadcrumb-link">Pelaporan LHKAN</span>
+          <span class="breadcrumb-link">Rencana Aksi</span>
           <span class="breadcrumb-separator">&gt;</span>
-          <span class="breadcrumb-current">Form Input</span>
+          <span class="breadcrumb-current">Pelaporan LHKAN</span>
         </div>
       </div>
     </div>
@@ -235,39 +235,39 @@
               
               <div class="form-group width-full">
                 <label class="form-label">Jumlah Total Aparatur Negara <span class="text-required">*</span></label>
-                <input type="number" class="custom-input" value="0" min="0" required />
+                <input type="number" id="inputTotalAparatur" class="custom-input" value="0" min="0" required />
               </div>
 
               <div class="form-row-two-cols">
                 <div class="form-group flex-1">
                   <label class="form-label">Jumlah Wajib LHKPN <span class="text-required">*</span></label>
-                  <input type="number" class="custom-input" value="0" min="0" required />
+                  <input type="number" id="inputWajibLhkpn" class="custom-input" value="0" min="0" required />
                 </div>
                 <div class="form-group flex-1">
                   <label class="form-label">Jumlah Tidak Wajib LHKPN <span class="text-required">*</span></label>
-                  <input type="number" class="custom-input" value="0" min="0" required />
+                  <input type="number" id="inputTidakWajibLhkpn" class="custom-input" value="0" min="0" required />
                 </div>
               </div>
 
               <div class="form-row-two-cols">
                 <div class="form-group flex-1">
                   <label class="form-label">Realisasi LHKPN (Sudah Lapor) <span class="text-required">*</span></label>
-                  <input type="number" class="custom-input" value="0" min="0" required />
+                  <input type="number" id="inputRealisasiLhkpn" class="custom-input" value="0" min="0" required />
                 </div>
                 <div class="form-group flex-1">
                   <label class="form-label">Realisasi SPT Tahunan - Non Wajib LHKPN (Sudah Lapor) <span class="text-required">*</span></label>
-                  <input type="number" class="custom-input" value="0" min="0" required />
+                  <input type="number" id="inputRealisasiSpt" class="custom-input" value="0" min="0" required />
                 </div>
               </div>
 
               <div class="form-group width-full">
                 <label class="form-label">Belum Lapor SPT - Non Wajib LHKPN <span class="text-required">*</span></label>
-                <input type="number" class="custom-input input-readonly-gray" value="0" readonly />
+                <input type="number" id="inputBelumLaporSpt" class="custom-input input-readonly-gray" value="0" readonly />
               </div>
 
               <div class="calculated-box">
                 <label class="calculated-label">Total Belum Lapor LHKAN (Calculated)</label>
-                <div class="calculated-value-display">0</div>
+                <div class="calculated-value-display" id="displayCalculatedTotal">0</div>
                 <span class="calculated-formula-text">
                   Formula: (Jumlah Wajib LHKPN - Realisasi LHKPN) + Belum Lapor SPT Non Wajib LHKPN
                 </span>
@@ -315,5 +315,6 @@
 
   <!-- JAVASCRIPT UTAMA TERPUSAT -->
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/pages/pelaporan_lhkan.js"></script>
 </body>
 </html>
